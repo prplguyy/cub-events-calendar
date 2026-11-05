@@ -11,7 +11,7 @@ Each subscription is its own calendar they can tick on and off. New and changed 
 ```
 SharePoint (needs CUB login)
    │  Power Automate flow, every 3 hours, runs as a CUB account
-   │  1. SharePoint search: all events from 30 days ago onward, across every club site
+   │  1. SharePoint search: all events from 90 days ago onward, across every club site
    │  2. GitHub "repository dispatch" with the events as JSON
    ▼
 GitHub Actions (.github/workflows/sync.yml)
@@ -40,10 +40,10 @@ Go to [make.powerautomate.com](https://make.powerautomate.com), then **Create �
 ```json
 {
   "request": {
-    "Querytext": "ContentTypeId:0x0102* EventDateOWSDATE>=@{formatDateTime(addDays(utcNow(),-30),'yyyy-MM-dd')}",
+    "Querytext": "ContentTypeId:0x0102* EventDateOWSDATE>=@{formatDateTime(addDays(utcNow(),-90),'yyyy-MM-dd')}",
     "RowLimit": 500,
     "TrimDuplicates": false,
-    "SelectProperties": ["SiteTitle","Title","EventDateOWSDATE","EndDateOWSDATE","LocationOWSTEXT","CategoryOWSCHCS","fAllDayEventOWSBOOL","UniqueId"]
+    "SelectProperties": ["SiteTitle","Title","EventDateOWSDATE","EndDateOWSDATE","LocationOWSTEXT","CategoryOWSCHCS","fAllDayEventOWSBOOL","UniqueId","DescriptionOWSMTXT","SPWebUrl","ListId","ListItemID"]
   }
 }
 ```
@@ -51,13 +51,13 @@ Go to [make.powerautomate.com](https://make.powerautomate.com), then **Create �
 **2. Select** (Data Operation)
 - From: `body('Send_an_HTTP_request_to_SharePoint')?['PrimaryQueryResult']?['RelevantResults']?['Table']?['Rows']`
 - Switch Map to text mode and use:
-  `createArray(item()?['Cells'][0]?['Value'], item()?['Cells'][1]?['Value'], item()?['Cells'][2]?['Value'], item()?['Cells'][3]?['Value'], item()?['Cells'][4]?['Value'], item()?['Cells'][5]?['Value'], item()?['Cells'][6]?['Value'], item()?['Cells'][7]?['Value'])`
+  `createArray(item()?['Cells'][0]?['Value'], item()?['Cells'][1]?['Value'], item()?['Cells'][2]?['Value'], item()?['Cells'][3]?['Value'], item()?['Cells'][4]?['Value'], item()?['Cells'][5]?['Value'], item()?['Cells'][6]?['Value'], item()?['Cells'][7]?['Value'], item()?['Cells'][8]?['Value'], item()?['Cells'][9]?['Value'], item()?['Cells'][10]?['Value'], item()?['Cells'][11]?['Value'])`
 
   The cells come back in the same order as `SelectProperties` above. If you change that list, change this too.
 
 **3. Compose**
 ```
-{"since": "@{formatDateTime(addDays(utcNow(),-30),'yyyy-MM-dd')}", "rows": @{body('Select')}}
+{"since": "@{formatDateTime(addDays(utcNow(),-90),'yyyy-MM-dd')}", "rows": @{body('Select')}}
 ```
 
 **4. Create a repository dispatch event** (GitHub connector, sign in with an account that can push to this repo)

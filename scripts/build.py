@@ -112,11 +112,20 @@ def vevent(e):
     lines.append("SUMMARY:" + esc(title))
     if e.get("location"):
         lines.append("LOCATION:" + esc(e["location"]))
-    desc = f'Host: {e["site"]}'
+    parts = []
+    if e.get("description"):
+        parts.append(e["description"])
+    info = f'Host: {e["site"]}'
     if e.get("category"):
-        desc += f'\nCategory: {e["category"]}'
-    desc += "\nSource: Student Clubs SharePoint"
-    lines.append("DESCRIPTION:" + esc(desc))
+        info += f'\nCategory: {e["category"]}'
+    parts.append(info)
+    if e.get("url"):
+        parts.append(f'Event page with picture and details (CUB login): {e["url"]}')
+    else:
+        parts.append("Source: Student Clubs SharePoint")
+    lines.append("DESCRIPTION:" + esc("\n\n".join(parts)))
+    if e.get("url"):
+        lines.append("URL:" + e["url"])
     lines.append("COLOR:" + color_for(e["site"])[0])
     if "cancel" in e["title"].lower():
         lines.append("STATUS:CANCELLED")
