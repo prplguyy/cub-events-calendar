@@ -59,7 +59,9 @@ def main(payload_path):
 
     incoming = []
     for r in rows:
-        r = list(r) + [""] * (12 - len(r))
+        if isinstance(r, dict):  # Power Automate Select gives {"r": [...]}
+            r = r.get("r") or []
+        r = [("" if v is None else v) for v in r] + [""] * (12 - len(r))
         site, title, start, end, loc, cat, allday, uid, desc, web, list_id, item_id = r[:12]
         start = norm_time(start)
         if not title or not start:
