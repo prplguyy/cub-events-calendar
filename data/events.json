@@ -1,23 +1,27 @@
 [
  {
   "site": "Pre-Degree Hub",
-  "title": "Pre-Degree Students Parents Orientation Webinar",
+  "title": "Pre-Degree Students & Parents Orientation Webinar",
   "start": "2026-08-14T12:00:00Z",
   "end": "2026-08-14T13:30:00Z",
   "location": "",
   "category": "Meeting",
   "allday": false,
-  "id": ""
+  "id": "e2698e4e-3006-47d4-b92d-0be0a193c644",
+  "description": "Link to join the webinar\nMeeting ID: 331 605 441 318 888\nPasscode: sH9k22dD",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=9"
  },
  {
   "site": "Pre-Degree Hub",
   "title": "Orientation Day In-Person",
   "start": "2026-08-26T08:00:00Z",
   "end": "2026-08-26T10:30:00Z",
-  "location": "RLH 172 (Conrad Naber Lecture Hall)",
+  "location": "RLH 172  (Conrad Naber Lecture Hall)",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "6ef5d5a4-bd2f-497a-8940-8bf3f6b8c54c",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=10"
  },
  {
   "site": "Pre-Degree Hub",
@@ -27,57 +31,69 @@
   "location": "MS Teams",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "a709a953-fe31-4865-a627-ea87e8c7c1c9",
+  "description": "For Students Who Have Not Yet Arrived.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=11"
  },
  {
   "site": "Pre-Degree Hub",
-  "title": "Student Life and Support Admissions Info Session",
+  "title": "Student Life and Support &​ Admissions ​Info Session",
   "start": "2026-08-27T09:00:00Z",
   "end": "2026-08-27T10:30:00Z",
   "location": "MS Teams",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "1e2826c5-8570-409e-9085-a81a9613807a",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=12"
  },
  {
   "site": "Pre-Degree Hub",
   "title": "Rules & Regulations Info Session",
   "start": "2026-08-28T08:00:00Z",
   "end": "2026-08-28T09:00:00Z",
-  "location": "RLH 172 (Conrad Naber Lecture Hall) / MS Teams",
+  "location": "RLH 172  (Conrad Naber Lecture Hall)/  MS Teams*",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "d94bf991-5e39-4d8b-9504-68a561da030f",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=13"
  },
  {
   "site": "Student Sports @ Constructor",
   "title": "Recreation Center: Membership Sale I",
   "start": "2026-09-03T14:00:00Z",
   "end": "2026-09-03T18:00:00Z",
-  "location": "Recreation Center, Sports Convention Center",
+  "location": "Recreation Center, Sports & Convention Center",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "4c0c3ec8-9d99-4c18-ab5b-e7f22b767bc4",
+  "description": "To get you geared up for next week, the Sports Advisors are offering membership sales on Thursday, September 3rd + Friday, September 4th, from 4-8pm. Stop by the Recreation Center and remember to bring your ID, a passport-sized photo and a card for payment (no cash!). Further information about the registration process can be found here.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentSportsConstructor/_layouts/15/Event.aspx?ListGuid=0448df26-7b6c-46f2-a90a-e9922ffad8df&ItemId=17"
  },
  {
   "site": "Student Sports @ Constructor",
   "title": "Recreation Center: Membership Sale II",
   "start": "2026-09-04T14:00:00Z",
   "end": "2026-09-04T18:00:00Z",
-  "location": "Recreation Center, Sports Convention Center",
+  "location": "Recreation Center, Sports & Convention Center",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "8d9c933d-c793-4b54-9a40-5c30fece1dcc",
+  "description": "To get you geared up for next week, the Sports Advisors are offering membership sales on Thursday, September 3rd + Friday, September 4th, from 4-8pm. Stop by the Recreation Center and remember to bring your ID, a passport-sized photo and a card for payment (no cash!). Further information about the registration process can be found here.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentSportsConstructor/_layouts/15/Event.aspx?ListGuid=0448df26-7b6c-46f2-a90a-e9922ffad8df&ItemId=18"
  },
  {
   "site": "Student Sports @ Constructor",
   "title": "Recreation Center: Fall 26 Reopening",
   "start": "2026-09-07T06:00:00Z",
   "end": "2026-09-07T06:00:00Z",
-  "location": "Recreation Center, Sports Convention Center",
+  "location": "Recreation Center, Sports & Convention Center",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "989e3270-088a-426e-907b-df30eea23f1e",
+  "description": "The countdown is on! Our Recreation Center, featuring a variety of fitness machines and equipment in the Sports & Convention Center (SCC) will open its doors on Monday, September 7th.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentSportsConstructor/_layouts/15/Event.aspx?ListGuid=0448df26-7b6c-46f2-a90a-e9922ffad8df&ItemId=19"
  },
  {
   "site": "University Karate Club",
@@ -87,7 +103,9 @@
   "location": "Dance Room, Nordmetall College, Constructor University",
   "category": "Training Session",
   "allday": false,
-  "id": ""
+  "id": "5ec454be-60b6-4ec6-a118-73e26d8f35d1",
+  "description": "This is the schedule for our first training session. come find us and the dance room and enjoy!\nHere`s the link to our whatsapp community, you will find more information regarding our usual sessions and other events here: https://chat.whatsapp.com/K4kD1We6pxfH7GTLXEJjD6",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/d24b2c6e-bcdb-4958-a0c8-0c1823607a7e/_layouts/15/Event.aspx?ListGuid=09ebccb2-d246-4b05-9d46-87c66f171517&ItemId=1"
  },
  {
   "site": "Pre-Degree Hub",
@@ -97,7 +115,9 @@
   "location": "PDH Seminar Room 3",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "78d15483-9ea5-46e1-889a-b6984e7c9a27",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=14"
  },
  {
   "site": "Chess Club",
@@ -107,7 +127,9 @@
   "location": "IRC-Seminar Room 1",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "9895511c-0c98-481c-8387-55268ae319d0",
+  "description": "♟️ *Constructor Chess Club Event — Today at 17:30*\nCome by today for an evening of *chess and CCC!*\nWe’ll have some time to play, along with a little information about the *Constructor Chess Club (CCC)* and what’s coming up this semester. There’ll also be a chance to ask questions or share ideas.\n🕠 *Time:* 17:30\n📍 *Location:* *IRC Seminar Room 1*\nWhether you’ve been playing chess for years or just want to drop by and see what CCC is about, *come join us!* ♟️",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/a741903f-279b-4c69-9473-54010bc6f211/_layouts/15/Event.aspx?ListGuid=d6cb6110-88bc-4208-8ea6-c7cea345ed71&ItemId=5"
  },
  {
   "site": "Student Clubs",
@@ -117,7 +139,9 @@
   "location": "The Other Side",
   "category": "TOS",
   "allday": false,
-  "id": ""
+  "id": "f32a0c72-0e18-45e1-af29-66adf6427cbc",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=117"
  },
  {
   "site": "TOS",
@@ -127,7 +151,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "0e1aeff3-245f-4b56-8dcd-540d8158291b",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=34"
  },
  {
   "site": "Student Clubs",
@@ -137,7 +163,9 @@
   "location": "The Other Side",
   "category": "TOS",
   "allday": false,
-  "id": ""
+  "id": "f44f88af-ec57-4fd4-9a4e-de557a6c230f",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=118"
  },
  {
   "site": "TOS",
@@ -147,47 +175,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
- },
- {
-  "site": "Student Clubs",
-  "title": "Club Event Fair",
-  "start": "2026-09-19T11:30:00Z",
-  "end": "2026-09-19T13:30:00Z",
-  "location": "Sports Convention Centre",
-  "category": "Club Event",
-  "allday": false,
-  "id": ""
- },
- {
-  "site": "Interdisciplinary Neuroscience Society",
-  "title": "Club Fair",
-  "start": "2026-09-19T11:30:00Z",
-  "end": "2026-09-19T13:30:00Z",
-  "location": "SCC",
-  "category": "",
-  "allday": false,
-  "id": ""
- },
- {
-  "site": "Student Sports @ Constructor",
-  "title": "Meet Sports Clubs @ Club Fair",
-  "start": "2026-09-19T11:30:00Z",
-  "end": "2026-09-19T13:30:00Z",
-  "location": "Sports Halls, Sports Convention Center",
-  "category": "",
-  "allday": false,
-  "id": ""
- },
- {
-  "site": "Investment Banking & Capital Markets Society (IBCM Society)",
-  "title": "Club Fair - IB&CM Society",
-  "start": "2026-09-19T11:30:00Z",
-  "end": "2026-09-19T13:30:00Z",
-  "location": "Sports Convention Center",
-  "category": "Club Events",
-  "allday": false,
-  "id": ""
+  "id": "e93c9e73-e4f9-43a5-b4c3-b6b5075c29d5",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=35"
  },
  {
   "site": "ASEAN CUB",
@@ -197,17 +187,69 @@
   "location": "Sports and Convention Centre (SCC)",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "f49c2f69-11ae-4042-a16b-26b12f27cc03",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=11"
+ },
+ {
+  "site": "Interdisciplinary Neuroscience Society",
+  "title": "Club Fair",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "SCC",
+  "category": "",
+  "allday": false,
+  "id": "49bcf3b5-263a-4dfe-be14-50d217b80f7f",
+  "description": "Come meet the Interdisciplinary Neuroscience Society (INS) at our club fair booth! We're a community for students curious about the brain — bringing together perspectives from psychology, biochemistry, biotechnology, computer science, and beyond. Stop by to learn about our upcoming talks, discussions, and events connecting neuroscience to topics like AI, mental health, and cutting-edge research. No prior experience required — just bring your curiosity! Follow us @ins.constructor to stay updated.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/bd4e7290-55d2-4673-abe8-9a1142612b05/_layouts/15/Event.aspx?ListGuid=bbb3e71e-350c-4f4f-a21c-85298ee79525&ItemId=1"
+ },
+ {
+  "site": "Investment Banking & Capital Markets Society (IBCM Society)",
+  "title": "Club Fair - IB&CM Society",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports & Convention Center",
+  "category": "Club Events",
+  "allday": false,
+  "id": "4dd3f53c-eebe-43a0-b695-168634722c95",
+  "description": "We are waiting for you at IB&CM Society Booth!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/0810f278-c7d8-47ec-8e55-7883e0eb7c87/_layouts/15/Event.aspx?ListGuid=8418a78c-448d-44a1-885a-f263427ccec1&ItemId=8"
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Club & Event Fair",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports & Convention Centre",
+  "category": "Club Event",
+  "allday": false,
+  "id": "a15c8707-3242-4b40-82d4-f93addf24434",
+  "description": "Annual Club Fair where Club and student-led events can promote their activities and students can register directly!\n\nPre-registration necessary (until September 13).",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=115"
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Meet Sports Clubs @ Club Fair",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports Halls, Sports & Convention Center",
+  "category": "",
+  "allday": false,
+  "id": "2270c6bc-d2aa-402e-985c-b9eab065bec9",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentSportsConstructor/_layouts/15/Event.aspx?ListGuid=0448df26-7b6c-46f2-a90a-e9922ffad8df&ItemId=16"
  },
  {
   "site": "Constructor Open Research and Engineering",
   "title": "Club Fair",
   "start": "2026-09-19T12:00:00Z",
   "end": "2026-09-19T14:00:00Z",
-  "location": "Sports and Convention Center (SCC)",
+  "location": "Sports and Convention Center ( SCC )",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "3dac8847-cd7b-48c9-9cca-dedfe0dcd8fa",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/4d2fd951-e72b-473c-a42b-dc8bdbe010dd/_layouts/15/Event.aspx?ListGuid=b08ae4b2-9d05-43f7-94cc-9ae3f564e33f&ItemId=1"
  },
  {
   "site": "Student Clubs",
@@ -217,7 +259,9 @@
   "location": "Football Field",
   "category": "Community Competition",
   "allday": false,
-  "id": ""
+  "id": "570cd287-9396-46fe-8a1c-6458066d3764",
+  "description": "Cheer for staff and CU Alumni on September 19th!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=120"
  },
  {
   "site": "Digital Creation Society",
@@ -227,17 +271,21 @@
   "location": "Constructor University, Campus Ring 1, 28759",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "94630c9a-5e06-4299-a87f-41db7e1eb7da",
+  "description": "Welcome to the Digital Creation Society!\nOn September 19th, 2026, We are opening the new semester introducing the club.\nInformation will be provided about the club and the events that will take place in the future.\nCome to hang out with us!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b45879df-4f1c-4833-b38b-a6b2aa5f034b/_layouts/15/Event.aspx?ListGuid=081e32b0-659a-4fdb-8179-eb912cf64fd3&ItemId=31"
  },
  {
   "site": "Student Clubs",
-  "title": "Alumni Homecoming Welcome Party",
+  "title": "Alumni Homecoming & Welcome Party",
   "start": "2026-09-19T20:00:00Z",
   "end": "2026-09-20T00:30:00Z",
   "location": "TOS & MusicLab (ACC)",
   "category": "Community Party",
   "allday": false,
-  "id": ""
+  "id": "a52363ae-3447-4757-bd57-add06c27a450",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=119"
  },
  {
   "site": "TOS",
@@ -247,7 +295,9 @@
   "location": "TOS / MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "633da406-c28b-4146-ab05-3e6b555d8abc",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=36"
  },
  {
   "site": "Investment Banking & Capital Markets Society (IBCM Society)",
@@ -257,7 +307,9 @@
   "location": "Krupp E Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "a5952a12-2e5d-43a9-86b4-d49def368fed",
+  "description": "Hello everyone! As the IB&CM Society, we are inviting you to join us on 21st, 22nd, 23rd and 24th of September at 19.00 in Krupp E seminar room. We will be presenting our society (departments, upcoming events etc.) in 4 different session! You can find the detailed schedule of the Insights week in our Instagram account and whatsapp group.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/0810f278-c7d8-47ec-8e55-7883e0eb7c87/_layouts/15/Event.aspx?ListGuid=8418a78c-448d-44a1-885a-f263427ccec1&ItemId=7"
  },
  {
   "site": "ASEAN CUB",
@@ -267,17 +319,9 @@
   "location": "Information Resource Centre (IRC) Small Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
- },
- {
-  "site": "Google Developers Group",
-  "title": "GDG: Info Session Fall 2026",
-  "start": "2026-09-25T16:00:00Z",
-  "end": "2026-09-25T17:00:00Z",
-  "location": "IRC Seminar Room III",
-  "category": "Club Events",
-  "allday": false,
-  "id": ""
+  "id": "67162034-ce3a-4546-811d-9e8a4d80193b",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=12"
  },
  {
   "site": "Google Developers Group",
@@ -287,7 +331,21 @@
   "location": "IRC Seminar Room 3",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "f16bce25-1f47-4d04-8038-53ec967d71f8",
+  "description": "Curious about GDG? 👀💻\nCome to our Info Session and find out what we’re building this semester — workshops, projects, events, partnerships, and lots of opportunities to get involved.\nNo matter your skill level, there’s a place for you. 🚀\nCome meet the team, ask questions, and see how you can join the community!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/f4592732-b5ae-4537-9326-7c452871d04e/_layouts/15/Event.aspx?ListGuid=96b23d88-107e-4dcb-ae8f-f7db4c20ed19&ItemId=1"
+ },
+ {
+  "site": "Google Developers Group",
+  "title": "GDG: Info Session Fall 2026",
+  "start": "2026-09-25T16:00:00Z",
+  "end": "2026-09-25T17:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": "5e64dd63-a6fd-4a9e-acb9-46e58caa4a33",
+  "description": "Join us for our GDG on Campus Info Session to discover what we’re building this semester! From workshops to innovative projects and exciting events, explore a world of opportunities to get involved. See you there!\nRSVP HERE or Click the link in our bio!\nhttps://gdg.community.dev/e/mck7jr/\n📍 IRC Seminar Room III\n🕐 18:00-19:00\n🗓️ September 25, 2026",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/f4592732-b5ae-4537-9326-7c452871d04e/_layouts/15/Event.aspx?ListGuid=96b23d88-107e-4dcb-ae8f-f7db4c20ed19&ItemId=3"
  },
  {
   "site": "RSA-DNA",
@@ -297,7 +355,9 @@
   "location": "SAC Hall 3",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "71606bbe-23d4-470c-a05d-b5018aea8f31",
+  "description": "Heritage Day\nThe 24th of September is a deeply meaningful day for South Africans: a celebration of our heritage and the diversity within it, our cultures, traditions, languages and histories. We're marking Heritage Day (24 September) with a celebration on the 25th.\nThis event is open to RSA-DNA members and the wider Constructor University community; all students, staff and guests are welcome. So whether you're part of RSA-DNA or just curious about South African culture, come through.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b5d6960f-c754-4b30-8aa2-2e44922b74c0/_layouts/15/Event.aspx?ListGuid=55607d8c-625d-419a-87c9-009719366109&ItemId=2"
  },
  {
   "site": "TOS",
@@ -307,27 +367,33 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "059585bb-4901-4cc1-b849-597dcf2edfa3",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=37"
  },
  {
   "site": "Student Clubs",
   "title": "Uni Games",
   "start": "2026-09-26T09:00:00Z",
   "end": "2026-09-26T16:00:00Z",
-  "location": "SCC Sports Fields",
+  "location": "SCC & Sports Fields",
   "category": "Community Competition",
   "allday": false,
-  "id": ""
+  "id": "0fc400fe-7e57-4b1f-a03f-48372203fd4a",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=116"
  },
  {
   "site": "Student Sports @ Constructor",
   "title": "Uni Games",
   "start": "2026-09-26T09:00:00Z",
   "end": "2026-09-26T16:00:00Z",
-  "location": "SCC Sports Fields",
+  "location": "SCC & Sports Fields",
   "category": "Community Competition",
   "allday": false,
-  "id": ""
+  "id": "34647874-dd4c-4c1b-91c2-25622beb50e6",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentSportsConstructor/_layouts/15/Event.aspx?ListGuid=0448df26-7b6c-46f2-a90a-e9922ffad8df&ItemId=15"
  },
  {
   "site": "ASEAN CUB",
@@ -337,27 +403,33 @@
   "location": "Information Resource Centre (IRC) Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "ad1fc055-0544-4bdc-bfd3-0122c0dc6847",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=13"
  },
  {
   "site": "Crochet and Knitting Club",
-  "title": "Crochet and Knitting Club // Weekly Meeting",
+  "title": "Crochet and Knitting Club//Weekly Meeting",
   "start": "2026-10-01T17:00:00Z",
   "end": "2026-10-01T18:30:00Z",
   "location": "Campus Ring, 28759 Bremen, Germany",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "30aa8e1c-752d-4a31-813f-e20f85ec118e",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/2243fc57-c360-40ae-807a-91273611641c/_layouts/15/Event.aspx?ListGuid=8f4d80f1-1a93-4e93-b3cf-b997fd10e874&ItemId=14"
  },
  {
   "site": "Digital Creation Society",
   "title": "MOVIE NIGHT: come join us!",
   "start": "2026-10-02T16:30:00Z",
   "end": "2026-10-02T19:30:00Z",
-  "location": "Constructor University, VR lab, South hall basement",
+  "location": "Constructor university, VR lab, South hall basement",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "1cab66a7-1d02-427f-ba9e-62b9024123b6",
+  "description": "Join us for a Movie Night with the Digital Creation Society!\nCome relax, enjoy a movie together, and spend a fun evening with fellow DCS members.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b45879df-4f1c-4833-b38b-a6b2aa5f034b/_layouts/15/Event.aspx?ListGuid=081e32b0-659a-4fdb-8179-eb912cf64fd3&ItemId=32"
  },
  {
   "site": "TOS",
@@ -367,7 +439,9 @@
   "location": "TOS / MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "ec4a0f1a-8be5-4624-acc9-ed018df58f18",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=38"
  },
  {
   "site": "ASEAN CUB",
@@ -377,17 +451,21 @@
   "location": "Information Resource Centre (IRC) Small Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "bfd33529-0d33-49d4-878c-21b957383965",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=14"
  },
  {
   "site": "Echoes of Earth",
-  "title": "Movie Night! Binge-watching Jurassic Park I & II 🦖",
+  "title": "Movie Night! Binge-watching Jurassic Park I & II🦖",
   "start": "2026-10-08T16:00:00Z",
   "end": "2026-10-08T21:00:00Z",
   "location": "C3 Community Space",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "cbbda2dd-1f49-4d96-acea-0087e61e68ca",
+  "description": "Join us this Thursday to watch one of the best movies of early ‘90s! Enjoy your favourite dinosaurs on the big screen, or get to know this franchise for the first time. Snacks and drinks will be provided, don’t forget to bring a friend!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b60effc1-bed2-4c9c-b1b3-a07eacae19f4/_layouts/15/Event.aspx?ListGuid=e441fb5c-227b-465d-ae2a-26b7d0bcdd65&ItemId=1"
  },
  {
   "site": "ASL Club",
@@ -397,7 +475,9 @@
   "location": "Research 4, Conference Room",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "a59d6aba-0949-4233-806e-0368eea00ccb",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=1"
  },
  {
   "site": "Poker and Statistic",
@@ -407,7 +487,9 @@
   "location": "SAC-301",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "a14dc0a6-07d5-4698-a81d-fb76d4b7b368",
+  "description": "First session of the poker club were we'll go over the general information and direction in which we'll be heading towards",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/965eecc1-75a0-4b3d-952d-e6de3c327c04/_layouts/15/Event.aspx?ListGuid=9f24527b-c847-4e08-bca3-4b38e74b3177&ItemId=1"
  },
  {
   "site": "ASEAN CUB",
@@ -417,7 +499,9 @@
   "location": "Information Resource Centre (IRC) Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "5acb3151-a086-4347-bdb5-f7313319ee66",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=15"
  },
  {
   "site": "Google Developers Group",
@@ -427,7 +511,9 @@
   "location": "",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "5464a0d6-bc36-4ef9-a8ae-19a39a0cdc5f",
+  "description": "🔐 A secret message. Hidden clues. A mystery waiting to be solved.\nThink you can crack the code? Join us for Decode Me if You Can!, a beginner-friendly cybersecurity workshop where you'll learn decoding techniques, explore useful tools, and put your new skills to the test in an interactive mystery challenge.\n💻 No experience needed, just bring your laptop and curiosity!\n📅 Thursday, October 15 | 19:00\nLearn. Decode. Uncover the mystery.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/f4592732-b5ae-4537-9326-7c452871d04e/_layouts/15/Event.aspx?ListGuid=96b23d88-107e-4dcb-ae8f-f7db4c20ed19&ItemId=2"
  },
  {
   "site": "ASL Club",
@@ -437,17 +523,21 @@
   "location": "IRC Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "4f8a27b1-8395-4b68-8038-915ed455bb74",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=2"
  },
  {
-  "site": "SASA - South Asian Student Association",
+  "site": "SASA- South Asian Student Association",
   "title": "Dashain x Navratri",
   "start": "2026-10-16T17:00:00Z",
   "end": "2026-10-16T20:00:00Z",
   "location": "East Wing",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "e6e17499-2d92-4ce9-9717-b326a347d776",
+  "description": "Dashain × Navratri is a cultural celebration bringing together two important South Asian festivals. It’s a chance to learn a little about the traditions behind them while celebrating together through food, music, dance, games, tika, and creativity",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ab13a434-9a6a-4388-9598-54edb15464ce/_layouts/15/Event.aspx?ListGuid=69eb698d-97ff-4eb2-97df-8a2d892b97e8&ItemId=6"
  },
  {
   "site": "TOS",
@@ -457,7 +547,9 @@
   "location": "TOS / MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "3019bb24-aa3e-475a-9ca0-f34fc4230d99",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=40"
  },
  {
   "site": "Explore Bremen",
@@ -467,7 +559,9 @@
   "location": "Bremen, HB, Deutschland",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "af2d9ca1-8742-4ce5-a0ea-f0a517b57789",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/abdc11f2-3291-4365-96c8-ea49c5cabf44/_layouts/15/Event.aspx?ListGuid=a950ffb4-9218-44ba-9ff1-4aa5a56fb6bc&ItemId=3"
  },
  {
   "site": "ASEAN CUB",
@@ -477,7 +571,9 @@
   "location": "Information Resource Centre (IRC) Small Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "52c55e8c-083d-4f7a-94c9-69240943587a",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=16"
  },
  {
   "site": "Student Clubs",
@@ -487,7 +583,9 @@
   "location": "IRC",
   "category": "Health Promotion",
   "allday": false,
-  "id": ""
+  "id": "b2f3e000-f44d-4791-88a1-fba33a6e5456",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=121"
  },
  {
   "site": "Digital Creation Society",
@@ -497,7 +595,9 @@
   "location": "Constructor University, VR Lab, South Hall",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "a85b38f7-b82b-45e7-8d48-7b0cbbfdf6f2",
+  "description": "Join us and create a spooky Halloween scene in Blender! We’ll be using basic shapes and simple modeling techniques to build a beginner-friendly 3D environment together.\nNo prior knowledge is necessary — everyone is welcome!\nBring your laptop, charger, and mouse!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b45879df-4f1c-4833-b38b-a6b2aa5f034b/_layouts/15/Event.aspx?ListGuid=081e32b0-659a-4fdb-8179-eb912cf64fd3&ItemId=34"
  },
  {
   "site": "ASL Club",
@@ -507,7 +607,9 @@
   "location": "IRC Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "783a6398-7059-493c-b4bf-3b8f5346b44e",
+  "description": "For those who want to learn communicating in American Sign Language, you are most welcome! See you in our practice sessions!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=3"
  },
  {
   "site": "Turkish Student Community",
@@ -517,7 +619,21 @@
   "location": "Krupp E Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "a63879b1-60d4-4b1d-a4c2-e7034176e59d",
+  "description": "Hello Everyone!\nAs the Turkish Student Community, we are very happy to announce our first event, Simit & Çay!\nThis event focuses on giving members and the rest of the student body an opportunity to relax and have a good time, where you can meet other people in the community, chat, play some games, and enjoy some free food and drinks.\nWe will also give information on upcoming events on campus, and where you can find Turkish food in Bremen!\nSo, be sure to come to the event that takes place in Krupp E Seminer Room, at 8PM this Thursday!\n📅 Date & Time: 22nd of October, Thursday | 20:00\n📍 Location: Krupp E Seminar Room\nEverybody is welcome to join, and you do not need to bring anything except for yourself. :)\nHope to see you all there!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/c4190923-9310-4a1a-9dfc-554c215c4297/_layouts/15/Event.aspx?ListGuid=52c7bb6a-3642-46aa-aaa5-6a07006921f5&ItemId=4"
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Pool Night",
+  "start": "2026-10-22T19:00:00Z",
+  "end": "2026-10-22T21:00:00Z",
+  "location": "Spordbad Grohn, Friedrich-Humbert Straße 20, 28759 Bremen, Germany",
+  "category": "Sports Event",
+  "allday": false,
+  "id": "82dc9183-4e95-426c-b302-07b0963c1bc3",
+  "description": "Join our Sports Advisor team for a fun-filled evening at Sportbad Grohn, just across the street from campus. Enjoy good music, great vibes, swimming, water polo, and exciting races in the pool while spending time with fellow students. Please note that this event is open to swimmers only. Register here and see you at the pool!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=131"
  },
  {
   "site": "Student Sports @ Constructor",
@@ -527,17 +643,9 @@
   "location": "Spordbad Grohn, Friedrich-Humbert Straße 20, 28759 Bremen, Germany",
   "category": "Sports Event",
   "allday": false,
-  "id": ""
- },
- {
-  "site": "Student Clubs",
-  "title": "Pool Night",
-  "start": "2026-10-22T19:00:00Z",
-  "end": "2026-10-22T21:00:00Z",
-  "location": "Spordbad Grohn, Friedrich-Humbert Straße 20, 28759 Bremen, Germany",
-  "category": "Sports Event",
-  "allday": false,
-  "id": ""
+  "id": "b89c1557-fee9-49bd-85b4-83637d049501",
+  "description": "Join our Sports Advisor team for a fun-filled evening at Sportbad Grohn, just across the street from campus. Enjoy good music, great vibes, swimming, water polo, and exciting races in the pool while spending time with fellow students. Please note that this event is open to swimmers only. Register here and see you at the pool!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentSportsConstructor/_layouts/15/Event.aspx?ListGuid=0448df26-7b6c-46f2-a90a-e9922ffad8df&ItemId=21"
  },
  {
   "site": "Baking Atelier",
@@ -547,7 +655,9 @@
   "location": "GSA, Constructor University",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "f302a54d-f890-443c-8f4d-6941cd40d79b",
+  "description": "Join the Baking Atelier for a Mystery Ingredient Baking Night! Discover a surprise ingredient and get creative by incorporating it into cookies, muffins, cupcakes or another bake of your choice. We’ll explore traditional German ingredients while sharing ideas, baking together and enjoying our creations. No baking experience needed—just curiosity and a willingness to experiment!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/e46bda39-a9db-4e5a-87ac-09b109152d18/_layouts/15/Event.aspx?ListGuid=fba3944d-be0f-4aa3-a5c8-9ab2570e8ce0&ItemId=7"
  },
  {
   "site": "Baking Atelier",
@@ -557,7 +667,9 @@
   "location": "Constructor University, GSA (in Student Activity Centre)",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "c59e1f48-018c-4ec9-a3bb-04a681e8ee25",
+  "description": "Mystery Ingredient Bake Night\nJoin the Baking Atelier for a creative bake night inspired by German flavours! We’ll reveal a mystery ingredient from German baking traditions—perhaps Apfelmus, Marzipan or Quark —and you’ll decide how to use it.\nChoose to make cookies, muffins or cupcakes, then add your own twist. You’re welcome to bring flavours from home or try a new fusion and share the story behind your creation. No baking experience needed!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/e46bda39-a9db-4e5a-87ac-09b109152d18/_layouts/15/Event.aspx?ListGuid=fba3944d-be0f-4aa3-a5c8-9ab2570e8ce0&ItemId=6"
  },
  {
   "site": "TOS",
@@ -567,7 +679,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "d5ef2b50-5ea8-4df6-90a1-1af6c5ea8e63",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=41"
  },
  {
   "site": "Pre-Degree Hub",
@@ -577,17 +691,21 @@
   "location": "",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "60b22efc-69c9-4d0b-87d3-45207a73890b",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=6"
  },
  {
   "site": "Explore Bremen",
-  "title": "Explore Lübeck - Overnight Trip",
+  "title": "Explore Lübeck - Overnight Trip",
   "start": "2026-10-24T07:00:00Z",
   "end": "2026-10-25T13:00:00Z",
   "location": "Friedlanderstraße 16",
   "category": "Get-together",
   "allday": false,
-  "id": ""
+  "id": "8878dd79-275c-4693-a497-548e69ba2ec1",
+  "description": "🏰 Explore Lübeck - Overnight Trip 🏰\nThe Explore Bremen Club is partnering with the Off Campus Community to bring you our most ambitious trip yet! 🚂✨\nOn 24–25 October, we’re heading to the Hanseatic city of Lübeck ⚓️🌊🍻\nCome Join us:\n🏛️ Visit the European Hansemuseum\n🌊 Head to the Baltic Sea beach\n🏰 See the city with a top class guide!\n🌙 Experience Lübeck’s nightlife in Professor Unrat 🍻🎶\n🛏️ And the best part we will even stay there overnight in schickSAAL\nTicket sale WEDNESDAY 2-4PM IN THE IRC FOYER\n📅 24–25 October\n📍 Lübeck\nJoin the Group Chat for more info!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/abdc11f2-3291-4365-96c8-ea49c5cabf44/_layouts/15/Event.aspx?ListGuid=a950ffb4-9218-44ba-9ff1-4aa5a56fb6bc&ItemId=4"
  },
  {
   "site": "Beyond the Screen Society",
@@ -597,7 +715,9 @@
   "location": "Krupp E College - Lecture Hall",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "1e158162-4373-4896-904f-c58ab69381ce",
+  "description": "Come and watch a horror movie with us!!! This will be our club's first official event, let's get to know each other! (Club members only)",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/d935cebe-c34b-47c0-9122-a34ea8ba2497/_layouts/15/Event.aspx?ListGuid=98e05719-885c-4616-8afa-1e3d25b45f05&ItemId=1"
  },
  {
   "site": "ASEAN CUB",
@@ -607,17 +727,9 @@
   "location": "Information Resource Centre (IRC) Seminar Room I",
   "category": "Club Events",
   "allday": false,
-  "id": ""
- },
- {
-  "site": "Chess Club",
-  "title": "Strategy Movie Night - Collab with MSCU",
-  "start": "2026-10-29T18:00:00Z",
-  "end": "2026-10-29T21:00:00Z",
-  "location": "ACC-2",
-  "category": "Club events",
-  "allday": false,
-  "id": ""
+  "id": "0faf6629-3b05-48ec-b6f9-00d15f404417",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=17"
  },
  {
   "site": "ASL Club",
@@ -627,7 +739,21 @@
   "location": "IRC Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "d6c47de2-975b-41f8-9d00-d12dc473a149",
+  "description": "For those who want to learn communicating in American Sign Language, you are most welcome! See you in our practice sessions!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=4"
+ },
+ {
+  "site": "Chess Club",
+  "title": "Strategy Movie Night - Collab with MSCU",
+  "start": "2026-10-29T18:00:00Z",
+  "end": "2026-10-29T21:00:00Z",
+  "location": "ACC-2",
+  "category": "Club events",
+  "allday": false,
+  "id": "44d81be7-9e82-49f5-be73-1d36f8a8b7fd",
+  "description": "The Chess Club is hosting a movie night in collaboration with the Math Society at Constructor University (MSCU). Join for an exciting movie on Strategy (not Chess), with some snacks.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/a741903f-279b-4c69-9473-54010bc6f211/_layouts/15/Event.aspx?ListGuid=d6cb6110-88bc-4208-8ea6-c7cea345ed71&ItemId=6"
  },
  {
   "site": "Turkish Student Community",
@@ -637,7 +763,9 @@
   "location": "Krupp E Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "9c7d7391-c864-45b4-884b-d35bc419c2f8",
+  "description": "We will be celebrating the 103rd anniversary of Türkiye declaring itself a republic on October 29, 1923.\nJoin us on Thursday, October 29th at 8:00 PM in the Krupp E Seminar Room for an evening of Turkish music, traditional food, and festivities as we honor Mustafa Kemal Atatürk and the founding of the country.\nAll are welcome to come together and celebrate this important milestone in Turkey’s history.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/c4190923-9310-4a1a-9dfc-554c215c4297/_layouts/15/Event.aspx?ListGuid=52c7bb6a-3642-46aa-aaa5-6a07006921f5&ItemId=5"
  },
  {
   "site": "Digital Creation Society",
@@ -647,17 +775,9 @@
   "location": "Constructor University, South Hall, VR Lab",
   "category": "Club Events",
   "allday": false,
-  "id": ""
- },
- {
-  "site": "Christian Fellowship",
-  "title": "CF Men's Ministry Anniversary",
-  "start": "2026-10-30T19:00:00Z",
-  "end": "2026-10-30T22:30:00Z",
-  "location": "Constructor University, Bremen",
-  "category": "Club Events",
-  "allday": false,
-  "id": ""
+  "id": "d728ebed-dbbc-4aa2-9154-31ba3f368e1a",
+  "description": "Join us for a special DCS Halloween Movie Night! 🎃\nCome enjoy a spooky evening with a movie, along with some snacks, drinks. Everyone is welcome!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b45879df-4f1c-4833-b38b-a6b2aa5f034b/_layouts/15/Event.aspx?ListGuid=081e32b0-659a-4fdb-8179-eb912cf64fd3&ItemId=35"
  },
  {
   "site": "ASEAN CUB",
@@ -667,7 +787,21 @@
   "location": "The Other Side (TOS)",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "494e8f0c-1ef8-427a-897b-db726a54314f",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=18"
+ },
+ {
+  "site": "Christian Fellowship",
+  "title": "CF Men's Ministry Anniversary",
+  "start": "2026-10-30T19:00:00Z",
+  "end": "2026-10-30T22:30:00Z",
+  "location": "Constructor University, Bremen",
+  "category": "Club Events",
+  "allday": false,
+  "id": "4d1b268c-e67e-40fa-a43e-14bf2f41f6e1",
+  "description": "It's a time to celebrate the Christian Fellowship Men's Ministry Anniversary. This ministry is called The Forge, and it has been a huge blessing to a lot of men at Constructor University.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/23be7a5d-eb38-4f85-90e6-4105ff8e11b1/_layouts/15/Event.aspx?ListGuid=1ff054de-e5e8-45a4-aa49-456efc552bc8&ItemId=1"
  },
  {
   "site": "TOS",
@@ -677,7 +811,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "a9da6044-64b1-42ee-b23f-8517d0be09cf",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=42"
  },
  {
   "site": "Christian Fellowship",
@@ -687,7 +823,9 @@
   "location": "Constructor University, Bremen",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "acaed463-ab0b-4de5-afe8-231ba9c11b15",
+  "description": "It's a time for CF alumni and current members to meet and have fellowship together.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/23be7a5d-eb38-4f85-90e6-4105ff8e11b1/_layouts/15/Event.aspx?ListGuid=1ff054de-e5e8-45a4-aa49-456efc552bc8&ItemId=2"
  },
  {
   "site": "Class 1A Entertainment Club",
@@ -697,7 +835,9 @@
   "location": "SAC Hall 3",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "8d56df3f-8c51-4907-92c2-d594aad8e7b7",
+  "description": "Join us for Class 1A's Halloween Costume Competition 2026 to celebrate and enjoy some friendly, spooky competition! Bring your costumes and creativity, and come along for a night of scary competition, socialising, games, banter, and the chance to win some tasty prizes!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/5a7bcf4e-0085-46cf-bd0f-97829795c0b5/_layouts/15/Event.aspx?ListGuid=827d99b9-4d4b-4146-a38b-697793610152&ItemId=1"
  },
  {
   "site": "Student Clubs",
@@ -707,7 +847,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "24e0161a-ad64-476f-8d5b-52dc6bd24e34",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=126"
  },
  {
   "site": "TOS",
@@ -717,7 +859,9 @@
   "location": "TOS / MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "3d8f56bd-69cb-4ff7-93a4-4f0bf66a236a",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=43"
  },
  {
   "site": "ASEAN CUB",
@@ -727,7 +871,9 @@
   "location": "IRC Seminar Room 1",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "a93bd28d-a732-47cb-86ca-91f553e53ef9",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=19"
  },
  {
   "site": "ASL Club",
@@ -737,7 +883,9 @@
   "location": "IRC Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "8ea7c54c-5123-45ef-acc8-cb99435df8bc",
+  "description": "For those who want to learn communicating in American Sign Language, you are most welcome! See you in our practice sessions!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=5"
  },
  {
   "site": "RSA-DNA",
@@ -747,7 +895,9 @@
   "location": "SAC Hall 3",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "808ae64a-2a73-4f8a-b106-e28bd2629955",
+  "description": "Inspired by the Magnificent Friday that embraces the sports, arts and culture of the South African culture. #MzansiBokkeFriday is the culmination of the cultural embracing and celebrating the rugby culture - that brings different people all interwoven by a common-ground - arts, sports and culture. The event will culminate of a live broadcast of the Springboks match and there will be cultural performances.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b5d6960f-c754-4b30-8aa2-2e44922b74c0/_layouts/15/Event.aspx?ListGuid=55607d8c-625d-419a-87c9-009719366109&ItemId=3"
  },
  {
   "site": "AWS Student Builder Group",
@@ -757,7 +907,9 @@
   "location": "Campus Ring, 28759 Bremen, Germany",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "c27c02da-b9d1-41b0-b063-342975cf1363",
+  "description": "Join us for an engaging session dedicated to everything you need to know about Amazon Web Services (AWS) Certifications! Whether you are completely new to cloud computing or looking to advance your tech career, this event will break down the value of AWS certifications, the various learning paths available, from foundational to professional levels, and how earning them can boost your resume and open doors to high-paying industry roles. You’ll gain actionable insights on study resources, exam preparation strategies, and tips for hands-on practice, giving you a clear roadmap to successfully earn your certification.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/9448f814-519b-4bb3-a79b-87d28a1f1fb7/_layouts/15/Event.aspx?ListGuid=1ff30c5a-86a2-4ddb-83a6-5535f16e9259&ItemId=3"
  },
  {
   "site": "TOS",
@@ -767,7 +919,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "5a474dd2-7e2d-486a-a4d0-f2390719468b",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=44"
  },
  {
   "site": "Student Clubs",
@@ -776,8 +930,10 @@
   "end": "2026-11-07T23:59:00Z",
   "location": "IRC Foyer",
   "category": "Cultural Fair & Exhibition",
-  "allday": true,
-  "id": ""
+  "allday": false,
+  "id": "a5228d13-553e-4b38-94ac-a5cfcde5d029",
+  "description": "Annual Cultural Fair showcasing diversity of cultures living and studying together on campus.\n\nBooths, exhibitions, performances & many more…\n\nClubs and cultural groups can participate writing their proposal to: community@constructor.university",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=123"
  },
  {
   "site": "La Society (Latin American Society)",
@@ -787,7 +943,9 @@
   "location": "SAC Hall 3",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "61fc7da3-64df-46a5-bd3a-9ce7cf7d6549",
+  "description": "A celebration of Mexican culture in La Society's biggest event yet.\n• Face painting,\n• Clay sculpting,\n• Authentic tacos,\n• Latino Snacks,\n• Short Movies.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/3cf9f903-e9c9-4841-a877-0e0db85e7272/_layouts/15/Event.aspx?ListGuid=cbf40921-ec65-44b9-a8a4-92b4c5c1a49d&ItemId=3"
  },
  {
   "site": "ASEAN CUB",
@@ -797,7 +955,9 @@
   "location": "Information Resource Centre (IRC) Seminar Room I",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "8e3e95b1-be24-4583-87bc-6b3354786aa9",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=21"
  },
  {
   "site": "Student Clubs",
@@ -807,7 +967,9 @@
   "location": "IRC Foyer",
   "category": "Charity Event",
   "allday": false,
-  "id": ""
+  "id": "547f19f9-0231-4369-87b9-1cfc3c259f2b",
+  "description": "Annual Blood Drive in collaboration with German Red Cross (DRK).",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=124"
  },
  {
   "site": "ASL Club",
@@ -817,7 +979,9 @@
   "location": "IRC Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "8bc3e00d-8689-40b0-b81d-80531dc1a6a7",
+  "description": "For those who want to learn communicating in American Sign Language, you are most welcome! See you in our practice sessions!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=6"
  },
  {
   "site": "Christian Fellowship",
@@ -827,7 +991,9 @@
   "location": "ICC East Wing (Next to the Coffee Bar)",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "25cf79e3-1add-4d9b-956c-1b38e57912cd",
+  "description": "It’s the Christian Fellowship’s biggest night of the year, and you don’t want to miss it! 🎉\nWe’re coming together to celebrate God’s goodness and give thanks for carrying us through another academic year: every exam, every deadline and every answered prayer. Expect powerful worship, prayer, an inspiring message from Pastor Albert, and testimonies that will lift your faith. Then the celebration continues with fun games and a special dinner with plenty of delicious food to share.\nBring your friends, bring your gratitude, and come ready for an unforgettable evening of fellowship and thanksgiving! 🙏✨",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/23be7a5d-eb38-4f85-90e6-4105ff8e11b1/_layouts/15/Event.aspx?ListGuid=1ff054de-e5e8-45a4-aa49-456efc552bc8&ItemId=3"
  },
  {
   "site": "ASEAN CUB",
@@ -837,7 +1003,9 @@
   "location": "The Other Side (TOS)",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "bf8c5ee5-0d54-4fb8-99b3-1db26d79fa57",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=22"
  },
  {
   "site": "TOS",
@@ -847,17 +1015,21 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "4a1b6b72-afc3-45b2-a22d-6cc3ac8c3abb",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=45"
  },
  {
-  "site": "SASA - South Asian Student Association",
+  "site": "SASA- South Asian Student Association",
   "title": "Diwali",
   "start": "2026-11-14T18:00:00Z",
   "end": "2026-11-14T19:00:00Z",
   "location": "",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "8bf51ee2-8a2a-4c00-b975-5c4447cb5b81",
+  "description": "A celebration of the Festival of Lights with music, food, games, and cultural activities. It will be a fun opportunity for the wider university community to experience and celebrate South Asian culture together.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ab13a434-9a6a-4388-9598-54edb15464ce/_layouts/15/Event.aspx?ListGuid=69eb698d-97ff-4eb2-97df-8a2d892b97e8&ItemId=7"
  },
  {
   "site": "TOS",
@@ -867,7 +1039,9 @@
   "location": "TOS/MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "e4c70c5e-9104-4118-911c-62ea083007d7",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=46"
  },
  {
   "site": "ASEAN CUB",
@@ -877,7 +1051,9 @@
   "location": "Information Resource Centre (IRC) Small Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "02a523e4-70ea-4d45-93b6-acf27de439d5",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=23"
  },
  {
   "site": "The Global Review",
@@ -887,7 +1063,9 @@
   "location": "Krupp E Seminar Hall",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "a9f094a0-b48b-494d-bb71-7e2f097b0e30",
+  "description": "Wondering how to find an internship, what to expect, or where to even begin? Join The Global Review (TGR) for an informal and interactive Internship Experience-Sharing Session, bringing together students from different majors who have already completed their internships. Hear firsthand experiences from fellow students as they share where they interned, how they found their opportunities, what their roles involved, and the challenges and lessons they encountered along the way. From navigating applications and interviews to making the most of your internship, discover practical tips, tricks, and advice to help you prepare for your own journey.\nThe session will also feature an open Q&A, giving you the opportunity to ask questions, exchange ideas, and get honest insights directly from students who have been through the process. Whether you're a first-year student just starting to explore opportunities or a second-year student preparing for your mandatory internship, this session is for you!\n\nOpen to: Students from ALL MAJORS\nReal experiences, practical advice, and everything you wish you knew before your internship!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/39f497b4-6553-4ce0-a829-333113a7b065/_layouts/15/Event.aspx?ListGuid=eb593b6a-d363-476c-8316-778479163748&ItemId=4"
  },
  {
   "site": "Student Clubs",
@@ -897,7 +1075,9 @@
   "location": "Arts & Culture Center",
   "category": "Student Show",
   "allday": false,
-  "id": ""
+  "id": "e5616f48-f344-498e-8c0d-62f8933473ba",
+  "description": "Annual Dance & Music showcase organized by Campus Crew and Orchestra Club!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=128"
  },
  {
   "site": "TOS",
@@ -907,17 +1087,21 @@
   "location": "TOS/MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "d22b5d6c-dd91-455e-ad1f-50b95e45e900",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=47"
  },
  {
-  "site": "SASA - South Asian Student Association",
+  "site": "SASA- South Asian Student Association",
   "title": "Movie Night",
   "start": "2026-11-22T18:00:00Z",
   "end": "2026-11-22T21:00:00Z",
   "location": "",
   "category": "Club events",
   "allday": false,
-  "id": ""
+  "id": "74ae3f2a-af21-435b-8992-a0d3c57466e0",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ab13a434-9a6a-4388-9598-54edb15464ce/_layouts/15/Event.aspx?ListGuid=69eb698d-97ff-4eb2-97df-8a2d892b97e8&ItemId=8"
  },
  {
   "site": "ASEAN CUB",
@@ -927,7 +1111,9 @@
   "location": "Information Resource Centre (IRC) Seminar Room III",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "131a6ca5-307b-407e-94a1-97458e6d7cfd",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=24"
  },
  {
   "site": "TOS",
@@ -937,7 +1123,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "45b3526f-3e25-41e9-8c5f-eda6ab8f205b",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=48"
  },
  {
   "site": "Student Clubs",
@@ -947,7 +1135,9 @@
   "location": "TOS",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "2003d513-d8bf-4438-bf0f-4387ab8ab2bc",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=127"
  },
  {
   "site": "TOS",
@@ -957,7 +1147,9 @@
   "location": "TOS/MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "9c0b48da-5a83-4b1f-be90-405e2e7a0cfd",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=49"
  },
  {
   "site": "ASEAN CUB",
@@ -967,7 +1159,9 @@
   "location": "Information Resource Centre (IRC) Small Seminar Room",
   "category": "Club Events",
   "allday": false,
-  "id": ""
+  "id": "61c8b23a-1247-45c3-893f-87b4b6ae8a99",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=25"
  },
  {
   "site": "Student Clubs",
@@ -977,7 +1171,9 @@
   "location": "tbc",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "7f6daee5-4dbe-4b17-8992-05d214433c8c",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=125"
  },
  {
   "site": "TOS",
@@ -987,7 +1183,9 @@
   "location": "TOS/MusicLab",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "91a2544b-d0fc-43bb-b31b-917b5db9e118",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=50"
  },
  {
   "site": "telc at CU",
@@ -996,8 +1194,10 @@
   "end": "2026-12-08T23:59:00Z",
   "location": "",
   "category": "",
-  "allday": true,
-  "id": ""
+  "allday": false,
+  "id": "f568c2d9-5b7e-44a2-abb4-a4c847d1433b",
+  "description": "During the first session of the exam training, you'll receive information about the exam procedure and the regulations.\nAfterward, you'll take a mock written exam.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=40"
  },
  {
   "site": "telc at CU",
@@ -1006,18 +1206,10 @@
   "end": "2026-12-08T23:59:00Z",
   "location": "",
   "category": "",
-  "allday": true,
-  "id": ""
- },
- {
-  "site": "telc at CU",
-  "title": "telc B2 Exam Training II",
-  "start": "2026-12-22T00:00:00Z",
-  "end": "2026-12-22T23:59:00Z",
-  "location": "",
-  "category": "",
-  "allday": true,
-  "id": ""
+  "allday": false,
+  "id": "2024d3d0-b189-431d-8d85-e0a4f33bf3f8",
+  "description": "During the first session of the exam training, you'll receive information about the exam procedure and the regulations.\nAfterward, you'll take a mock written exam.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=37"
  },
  {
   "site": "telc at CU",
@@ -1026,18 +1218,22 @@
   "end": "2026-12-22T23:59:00Z",
   "location": "",
   "category": "",
-  "allday": true,
-  "id": ""
+  "allday": false,
+  "id": "7493140e-6282-47bb-ac08-eca05cba50c5",
+  "description": "In the second part of the exam preparation, we will review the written mock exam and work together to develop solution strategies. Afterward, we will simulate the oral exam.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=39"
  },
  {
   "site": "telc at CU",
-  "title": "B2 telc Exam",
-  "start": "2027-01-20T00:00:00Z",
-  "end": "2027-01-20T23:59:00Z",
+  "title": "telc B2 Exam Training II",
+  "start": "2026-12-22T00:00:00Z",
+  "end": "2026-12-22T23:59:00Z",
   "location": "",
   "category": "",
-  "allday": true,
-  "id": ""
+  "allday": false,
+  "id": "4b60b238-928e-4e00-b29f-b4f5ca66b87d",
+  "description": "In the second part of the exam preparation, we will review the written mock exam and work together to develop solution strategies. Afterward, we will simulate the oral exam.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=38"
  },
  {
   "site": "telc at CU",
@@ -1046,8 +1242,22 @@
   "end": "2027-01-20T23:59:00Z",
   "location": "",
   "category": "",
-  "allday": true,
-  "id": ""
+  "allday": false,
+  "id": "26488896-ef6b-4d56-b960-ed68348dea7f",
+  "description": "Mandatory trainings are scheduled for December 8 and December 22!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=41"
+ },
+ {
+  "site": "telc at CU",
+  "title": "B2 telc Exam",
+  "start": "2027-01-20T00:00:00Z",
+  "end": "2027-01-20T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": false,
+  "id": "33eaaa01-7226-4e23-821c-32d3566106a1",
+  "description": "Mandatory trainings are scheduled for December 8 and December 22!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=42"
  },
  {
   "site": "Pre-Degree Hub",
@@ -1057,7 +1267,9 @@
   "location": "",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "ce29617a-2b2d-4f81-a8d2-ed354526e2d3",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=7"
  },
  {
   "site": "Pre-Degree Hub",
@@ -1067,6 +1279,8 @@
   "location": "",
   "category": "",
   "allday": false,
-  "id": ""
+  "id": "7c6b45d1-f8fe-4556-9000-067ebdfb7f2b",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=8"
  }
 ]
