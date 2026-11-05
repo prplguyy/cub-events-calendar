@@ -49,21 +49,19 @@ Go to [make.powerautomate.com](https://make.powerautomate.com), then **Create �
 ```
 
 **2. Select** (Data Operation)
-- From: `body('Send_an_HTTP_request_to_SharePoint')?['PrimaryQueryResult']?['RelevantResults']?['Table']?['Rows']`
-- Switch Map to text mode and use:
+- From (expression): `body('Send_an_HTTP_request_to_SharePoint')?['PrimaryQueryResult']?['RelevantResults']?['Table']?['Rows']`
+- Map: one key, `r`, whose value is the expression
   `createArray(item()?['Cells'][0]?['Value'], item()?['Cells'][1]?['Value'], item()?['Cells'][2]?['Value'], item()?['Cells'][3]?['Value'], item()?['Cells'][4]?['Value'], item()?['Cells'][5]?['Value'], item()?['Cells'][6]?['Value'], item()?['Cells'][7]?['Value'], item()?['Cells'][8]?['Value'], item()?['Cells'][9]?['Value'], item()?['Cells'][10]?['Value'], item()?['Cells'][11]?['Value'])`
 
   The cells come back in the same order as `SelectProperties` above. If you change that list, change this too.
 
-**3. Compose**
-```
-{"since": "@{formatDateTime(addDays(utcNow(),-90),'yyyy-MM-dd')}", "rows": @{body('Select')}}
-```
+**3. Create a repository dispatch event** (GitHub connector, signed in with an account that can push to this repo)
+- Repository Owner: `prplguyy`, Repository Name: `cub-events-calendar`
+- Event Name: `sharepoint-sync`
+- Event Payload (expression):
+  `addProperty(addProperty(json(decodeUriComponent('%7B%7D')), 'since', formatDateTime(addDays(utcNow(), -90), 'yyyy-MM-dd')), 'rows', body('Select'))`
 
-**4. Create a repository dispatch event** (GitHub connector, sign in with an account that can push to this repo)
-- Repository owner / name: this repo
-- event_type: `sharepoint-sync`
-- client_payload: `json(outputs('Compose'))`
+  (`decodeUriComponent('%7B%7D')` is just `{}`; the expression editor refuses a literal `{}`.)
 
 Save, then **Test → Manually**. A run of “Sync and publish” should appear under the repo's **Actions** tab.
 
