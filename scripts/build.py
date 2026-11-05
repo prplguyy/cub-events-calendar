@@ -17,10 +17,9 @@ GROUP_OF_SITE = {
     "Student Sports @ Constructor": "sports",
     "Undergraduate Student Government": "usg",
     "Graduate Student Association": "usg",
-    "RSA-DNA": "colleges",
     "Krupp Residential Support Assistants": "colleges",
     "College III - The place to be": "colleges",
-    "Off Campus Student Hub": "colleges",
+    "Off Campus Student Hub": "campus",
     "Pre-Degree Hub": "services",
     "telc at CU": "services",
     "CTL Hub": "services",
@@ -36,10 +35,39 @@ GROUPS = [
     ("clubs", "All Clubs", "Every event posted by any student club"),
     ("tos", "TOS", "Bar nights and parties at The Other Side"),
     ("sports", "Student Sports", "Recreation Center and sports events"),
-    ("usg", "Student Government", "USG and GSA events"),
-    ("colleges", "Colleges & RSAs", "Residential college, RSA and off-campus hub events"),
+    ("usg", "Student Government", "USG and GSA events (coming soon)"),
+    ("colleges", "Residential Colleges", "College and RSA events (coming soon)"),
     ("services", "Academic Services", "Pre-Degree Hub, telc and other university services"),
 ]
+
+
+# CSS colour names (RFC 7986 COLOR needs a CSS3 name) with their hex for Apple's calendar colour.
+PALETTE = [
+    ("crimson", "#DC143C"), ("darkorange", "#FF8C00"), ("goldenrod", "#DAA520"), ("seagreen", "#2E8B57"),
+    ("teal", "#008080"), ("dodgerblue", "#1E90FF"), ("royalblue", "#4169E1"), ("slateblue", "#6A5ACD"),
+    ("darkviolet", "#9400D3"), ("mediumvioletred", "#C71585"), ("hotpink", "#FF69B4"), ("sienna", "#A0522D"),
+    ("olivedrab", "#6B8E23"), ("darkcyan", "#008B8B"), ("steelblue", "#4682B4"), ("indianred", "#CD5C5C"),
+    ("chocolate", "#D2691E"), ("mediumseagreen", "#3CB371"), ("darkslateblue", "#483D8B"), ("orchid", "#DA70D6"),
+]
+GROUP_COLOR = {"campus": ("royalblue", "#4169E1"), "clubs": ("seagreen", "#2E8B57"), "tos": ("darkviolet", "#9400D3"),
+               "sports": ("darkorange", "#FF8C00"), "usg": ("crimson", "#DC143C"), "colleges": ("teal", "#008080"),
+               "services": ("slategray", "#708090")}
+
+
+COLORS_FILE = ROOT / "data" / "colors.json"
+_club_colors = json.loads(COLORS_FILE.read_text(encoding="utf-8")) if COLORS_FILE.exists() else {}
+
+
+def color_for(site):
+    """Groups have fixed colours. Each club gets the least-used palette colour the first
+    time it appears; the choice is saved in data/colors.json so it never changes."""
+    g = GROUP_OF_SITE.get(site)
+    if g:
+        return GROUP_COLOR[g]
+    if site not in _club_colors:
+        used = [list(_club_colors.values()).count(i) for i in range(len(PALETTE))]
+        _club_colors[site] = used.index(min(used))
+    return PALETTE[_club_colors[site]]
 
 
 def slug(s):
@@ -89,17 +117,19 @@ def vevent(e):
         desc += f'\nCategory: {e["category"]}'
     desc += "\nSource: Student Clubs SharePoint"
     lines.append("DESCRIPTION:" + esc(desc))
+    lines.append("COLOR:" + color_for(e["site"])[0])
     if "cancel" in e["title"].lower():
         lines.append("STATUS:CANCELLED")
     lines.append("END:VEVENT")
     return lines
 
 
-def calendar(name, events):
+def calendar(name, events, color):
     lines = [
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//CUB Events//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
         "X-WR-CALNAME:" + esc(f"CUB · {name}"), "X-WR-TIMEZONE:Europe/Berlin",
         "REFRESH-INTERVAL;VALUE=DURATION:PT3H", "X-PUBLISHED-TTL:PT3H",
+        "COLOR:" + color[0], "X-APPLE-CALENDAR-COLOR:" + color[1],
     ]
     for e in events:
         lines += vevent(e)
@@ -123,24 +153,25 @@ def main():
     today = date.today().isoformat()
     upcoming = lambda evs: sum(1 for e in evs if e["start"][:10] >= today)
 
-    def write(fname, name, evs):
-        (OUT / "feeds" / fname).write_text(calendar(name, evs), encoding="utf-8", newline="")
+    def write(fname, name, evs, color):
+        (OUT / "feeds" / fname).write_text(calendar(name, evs, color), encoding="utf-8", newline="")
 
     manifest = {"updated": today, "everything": {"file": "feeds/all.ics", "upcoming": upcoming(events)},
                 "groups": [], "clubs": []}
-    write("all.ics", "Everything", events)
+    write("all.ics", "Everything", events, ("darkslategray", "#2F4F4F"))
     for gid, name, blurb in GROUPS:
         evs = by_group.get(gid, [])
-        write(f"{gid}.ics", name, evs)
-        manifest["groups"].append({"id": gid, "name": name, "blurb": blurb,
+        write(f"{gid}.ics", name, evs, GROUP_COLOR[gid])
+        manifest["groups"].append({"id": gid, "name": name, "blurb": blurb, "color": GROUP_COLOR[gid][1],
                                    "file": f"feeds/{gid}.ics", "upcoming": upcoming(evs)})
     for club, evs in sorted(by_club.items(), key=lambda x: x[0].lower()):
         fname = f"club-{slug(club)}.ics"
-        write(fname, club, evs)
+        write(fname, club, evs, color_for(club))
         nxt = min((e for e in evs if e["start"][:10] >= today), key=lambda e: e["start"], default=None)
-        manifest["clubs"].append({"name": club, "file": f"feeds/{fname}", "upcoming": upcoming(evs),
+        manifest["clubs"].append({"name": club, "file": f"feeds/{fname}", "color": color_for(club)[1], "upcoming": upcoming(evs),
                                   "next": {"title": nxt["title"], "start": nxt["start"]} if nxt else None})
 
+    COLORS_FILE.write_text(json.dumps(_club_colors, indent=1, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     (OUT / "calendars.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False), encoding="utf-8")
     shutil.copy(ROOT / "site" / "index.html", OUT / "index.html")
     (OUT / ".nojekyll").write_text("")
