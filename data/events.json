@@ -1,0 +1,1072 @@
+[
+ {
+  "site": "Pre-Degree Hub",
+  "title": "Pre-Degree Students Parents Orientation Webinar",
+  "start": "2026-08-14T12:00:00Z",
+  "end": "2026-08-14T13:30:00Z",
+  "location": "",
+  "category": "Meeting",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "Orientation Day In-Person",
+  "start": "2026-08-26T08:00:00Z",
+  "end": "2026-08-26T10:30:00Z",
+  "location": "RLH 172 (Conrad Naber Lecture Hall)",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "Orientation Day Online",
+  "start": "2026-08-27T08:00:00Z",
+  "end": "2026-08-27T09:00:00Z",
+  "location": "MS Teams",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "Student Life and Support Admissions Info Session",
+  "start": "2026-08-27T09:00:00Z",
+  "end": "2026-08-27T10:30:00Z",
+  "location": "MS Teams",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "Rules & Regulations Info Session",
+  "start": "2026-08-28T08:00:00Z",
+  "end": "2026-08-28T09:00:00Z",
+  "location": "RLH 172 (Conrad Naber Lecture Hall) / MS Teams",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Recreation Center: Membership Sale I",
+  "start": "2026-09-03T14:00:00Z",
+  "end": "2026-09-03T18:00:00Z",
+  "location": "Recreation Center, Sports Convention Center",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Recreation Center: Membership Sale II",
+  "start": "2026-09-04T14:00:00Z",
+  "end": "2026-09-04T18:00:00Z",
+  "location": "Recreation Center, Sports Convention Center",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Recreation Center: Fall 26 Reopening",
+  "start": "2026-09-07T06:00:00Z",
+  "end": "2026-09-07T06:00:00Z",
+  "location": "Recreation Center, Sports Convention Center",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "University Karate Club",
+  "title": "University Karate Club: Start of the training sessions",
+  "start": "2026-09-09T17:00:00Z",
+  "end": "2026-09-09T18:00:00Z",
+  "location": "Dance Room, Nordmetall College, Constructor University",
+  "category": "Training Session",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "Mandatory Residence Permit Info Session",
+  "start": "2026-09-11T10:30:00Z",
+  "end": "2026-09-11T11:00:00Z",
+  "location": "PDH Seminar Room 3",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Chess Club",
+  "title": "Chess Playing Session",
+  "start": "2026-09-11T15:30:00Z",
+  "end": "2026-09-11T17:30:00Z",
+  "location": "IRC-Seminar Room 1",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "TOS Opening Bar Night",
+  "start": "2026-09-11T18:00:00Z",
+  "end": "2026-09-11T22:00:00Z",
+  "location": "The Other Side",
+  "category": "TOS",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "First Bar Night of the semester: Welcome Games",
+  "start": "2026-09-11T18:00:00Z",
+  "end": "2026-09-11T22:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Alumni Bar Night",
+  "start": "2026-09-18T18:00:00Z",
+  "end": "2026-09-18T22:00:00Z",
+  "location": "The Other Side",
+  "category": "TOS",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Alumni Bar Night: Chillout at TOS",
+  "start": "2026-09-18T18:00:00Z",
+  "end": "2026-09-18T22:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Club Event Fair",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports Convention Centre",
+  "category": "Club Event",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Interdisciplinary Neuroscience Society",
+  "title": "Club Fair",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "SCC",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Meet Sports Clubs @ Club Fair",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports Halls, Sports Convention Center",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Investment Banking & Capital Markets Society (IBCM Society)",
+  "title": "Club Fair - IB&CM Society",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports Convention Center",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Club Fair 2026",
+  "start": "2026-09-19T11:30:00Z",
+  "end": "2026-09-19T13:30:00Z",
+  "location": "Sports and Convention Centre (SCC)",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Constructor Open Research and Engineering",
+  "title": "Club Fair",
+  "start": "2026-09-19T12:00:00Z",
+  "end": "2026-09-19T14:00:00Z",
+  "location": "Sports and Convention Center (SCC)",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Open Campus Football tournament",
+  "start": "2026-09-19T13:00:00Z",
+  "end": "2026-09-19T15:00:00Z",
+  "location": "Football Field",
+  "category": "Community Competition",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Digital Creation Society",
+  "title": "Digital Creation Society: Info Session",
+  "start": "2026-09-19T15:00:00Z",
+  "end": "2026-09-19T16:30:00Z",
+  "location": "Constructor University, Campus Ring 1, 28759",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Alumni Homecoming Welcome Party",
+  "start": "2026-09-19T20:00:00Z",
+  "end": "2026-09-20T00:30:00Z",
+  "location": "TOS & MusicLab (ACC)",
+  "category": "Community Party",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Welcome Party – Alumni Homecoming",
+  "start": "2026-09-19T20:00:00Z",
+  "end": "2026-09-20T00:00:00Z",
+  "location": "TOS / MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Investment Banking & Capital Markets Society (IBCM Society)",
+  "title": "Insights Week",
+  "start": "2026-09-21T17:00:00Z",
+  "end": "2026-09-24T19:00:00Z",
+  "location": "Krupp E Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Sushi Potluck",
+  "start": "2026-09-22T17:00:00Z",
+  "end": "2026-09-22T19:00:00Z",
+  "location": "Information Resource Centre (IRC) Small Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Google Developers Group",
+  "title": "GDG: Info Session Fall 2026",
+  "start": "2026-09-25T16:00:00Z",
+  "end": "2026-09-25T17:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Google Developers Group",
+  "title": "GDG Constructor University: Grand Fall Info Session 2026",
+  "start": "2026-09-25T16:00:00Z",
+  "end": "2026-09-25T17:00:00Z",
+  "location": "IRC Seminar Room 3",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "RSA-DNA",
+  "title": "Heritage Day Celebration",
+  "start": "2026-09-25T16:00:00Z",
+  "end": "2026-09-25T21:00:00Z",
+  "location": "SAC Hall 3",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Regular Bar Night",
+  "start": "2026-09-25T18:00:00Z",
+  "end": "2026-09-25T22:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Uni Games",
+  "start": "2026-09-26T09:00:00Z",
+  "end": "2026-09-26T16:00:00Z",
+  "location": "SCC Sports Fields",
+  "category": "Community Competition",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Uni Games",
+  "start": "2026-09-26T09:00:00Z",
+  "end": "2026-09-26T16:00:00Z",
+  "location": "SCC Sports Fields",
+  "category": "Community Competition",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Studio Ghibli Movie Night",
+  "start": "2026-09-29T17:00:00Z",
+  "end": "2026-09-29T20:00:00Z",
+  "location": "Information Resource Centre (IRC) Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Crochet and Knitting Club",
+  "title": "Crochet and Knitting Club // Weekly Meeting",
+  "start": "2026-10-01T17:00:00Z",
+  "end": "2026-10-01T18:30:00Z",
+  "location": "Campus Ring, 28759 Bremen, Germany",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Digital Creation Society",
+  "title": "MOVIE NIGHT: come join us!",
+  "start": "2026-10-02T16:30:00Z",
+  "end": "2026-10-02T19:30:00Z",
+  "location": "Constructor University, VR lab, South hall basement",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Themed Bar Night: Oktoberfest Bar Night",
+  "start": "2026-10-02T18:00:00Z",
+  "end": "2026-10-02T22:00:00Z",
+  "location": "TOS / MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Thai Potluck",
+  "start": "2026-10-06T17:00:00Z",
+  "end": "2026-10-06T19:00:00Z",
+  "location": "Information Resource Centre (IRC) Small Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Echoes of Earth",
+  "title": "Movie Night! Binge-watching Jurassic Park I & II 🦖",
+  "start": "2026-10-08T16:00:00Z",
+  "end": "2026-10-08T21:00:00Z",
+  "location": "C3 Community Space",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASL Club",
+  "title": "Info Session",
+  "start": "2026-10-08T18:00:00Z",
+  "end": "2026-10-08T19:00:00Z",
+  "location": "Research 4, Conference Room",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Poker and Statistic",
+  "title": "Info session",
+  "start": "2026-10-09T16:00:00Z",
+  "end": "2026-10-09T17:00:00Z",
+  "location": "SAC-301",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Romcom Movie Night",
+  "start": "2026-10-13T17:00:00Z",
+  "end": "2026-10-13T20:00:00Z",
+  "location": "Information Resource Centre (IRC) Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Google Developers Group",
+  "title": "Decode Me if You Can!",
+  "start": "2026-10-15T17:00:00Z",
+  "end": "2026-10-15T18:00:00Z",
+  "location": "",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASL Club",
+  "title": "ASL 101",
+  "start": "2026-10-15T18:00:00Z",
+  "end": "2026-10-15T19:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "SASA - South Asian Student Association",
+  "title": "Dashain x Navratri",
+  "start": "2026-10-16T17:00:00Z",
+  "end": "2026-10-16T20:00:00Z",
+  "location": "East Wing",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Health Bar Night",
+  "start": "2026-10-16T18:00:00Z",
+  "end": "2026-10-16T22:00:00Z",
+  "location": "TOS / MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Explore Bremen",
+  "title": "Capture The Flag",
+  "start": "2026-10-17T08:00:00Z",
+  "end": "2026-10-17T13:00:00Z",
+  "location": "Bremen, HB, Deutschland",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Filipino Potluck",
+  "start": "2026-10-20T17:00:00Z",
+  "end": "2026-10-20T19:00:00Z",
+  "location": "Information Resource Centre (IRC) Small Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Student Health Day",
+  "start": "2026-10-21T09:00:00Z",
+  "end": "2026-10-21T14:00:00Z",
+  "location": "IRC",
+  "category": "Health Promotion",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Digital Creation Society",
+  "title": "DCS Halloween 3D Modeling Workshop",
+  "start": "2026-10-22T15:00:00Z",
+  "end": "2026-10-22T17:00:00Z",
+  "location": "Constructor University, VR Lab, South Hall",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASL Club",
+  "title": "ASL Session 2",
+  "start": "2026-10-22T17:00:00Z",
+  "end": "2026-10-22T18:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Turkish Student Community",
+  "title": "Simit & Çay",
+  "start": "2026-10-22T18:00:00Z",
+  "end": "2026-10-22T20:00:00Z",
+  "location": "Krupp E Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Sports @ Constructor",
+  "title": "Pool Night",
+  "start": "2026-10-22T19:00:00Z",
+  "end": "2026-10-22T21:00:00Z",
+  "location": "Spordbad Grohn, Friedrich-Humbert Straße 20, 28759 Bremen, Germany",
+  "category": "Sports Event",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Pool Night",
+  "start": "2026-10-22T19:00:00Z",
+  "end": "2026-10-22T21:00:00Z",
+  "location": "Spordbad Grohn, Friedrich-Humbert Straße 20, 28759 Bremen, Germany",
+  "category": "Sports Event",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Baking Atelier",
+  "title": "Mystery Ingredient Baking Night",
+  "start": "2026-10-23T15:00:00Z",
+  "end": "2026-10-23T19:00:00Z",
+  "location": "GSA, Constructor University",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Baking Atelier",
+  "title": "Mystery Ingredient Baking Night",
+  "start": "2026-10-23T15:00:00Z",
+  "end": "2026-10-23T20:00:00Z",
+  "location": "Constructor University, GSA (in Student Activity Centre)",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "TOS Organized Bar Night",
+  "start": "2026-10-23T18:00:00Z",
+  "end": "2026-10-23T22:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "TestAS Exam on Campus (paper-based)",
+  "start": "2026-10-24T06:30:00Z",
+  "end": "2026-10-24T14:30:00Z",
+  "location": "",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Explore Bremen",
+  "title": "Explore Lübeck - Overnight Trip",
+  "start": "2026-10-24T07:00:00Z",
+  "end": "2026-10-25T13:00:00Z",
+  "location": "Friedlanderstraße 16",
+  "category": "Get-together",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Beyond the Screen Society",
+  "title": "Spooky Night with BS^2",
+  "start": "2026-10-26T18:30:00Z",
+  "end": "2026-10-26T21:00:00Z",
+  "location": "Krupp E College - Lecture Hall",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Horror Movie Night",
+  "start": "2026-10-27T18:30:00Z",
+  "end": "2026-10-27T21:00:00Z",
+  "location": "Information Resource Centre (IRC) Seminar Room I",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Chess Club",
+  "title": "Strategy Movie Night - Collab with MSCU",
+  "start": "2026-10-29T18:00:00Z",
+  "end": "2026-10-29T21:00:00Z",
+  "location": "ACC-2",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASL Club",
+  "title": "ASL Practice Session 3",
+  "start": "2026-10-29T18:00:00Z",
+  "end": "2026-10-29T19:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Turkish Student Community",
+  "title": "Republic Day Celebration",
+  "start": "2026-10-29T19:00:00Z",
+  "end": "2026-10-29T21:00:00Z",
+  "location": "Krupp E Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Digital Creation Society",
+  "title": "DCS Halloween Movie Night",
+  "start": "2026-10-30T17:30:00Z",
+  "end": "2026-10-30T19:30:00Z",
+  "location": "Constructor University, South Hall, VR Lab",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Christian Fellowship",
+  "title": "CF Men's Ministry Anniversary",
+  "start": "2026-10-30T19:00:00Z",
+  "end": "2026-10-30T22:30:00Z",
+  "location": "Constructor University, Bremen",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Scary-oke Bar Night with SPECTRUM",
+  "start": "2026-10-30T19:00:00Z",
+  "end": "2026-10-30T22:00:00Z",
+  "location": "The Other Side (TOS)",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Themed Bar Night: Scary-oke",
+  "start": "2026-10-30T19:00:00Z",
+  "end": "2026-10-30T23:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Christian Fellowship",
+  "title": "CF Reunion",
+  "start": "2026-10-31T12:00:00Z",
+  "end": "2026-10-31T15:30:00Z",
+  "location": "Constructor University, Bremen",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Class 1A Entertainment Club",
+  "title": "Halloween Costume Competition",
+  "start": "2026-10-31T19:00:00Z",
+  "end": "2026-10-31T21:00:00Z",
+  "location": "SAC Hall 3",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Halloween Party",
+  "start": "2026-10-31T21:00:00Z",
+  "end": "2026-11-01T01:30:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Community Party – Halloween",
+  "start": "2026-10-31T21:00:00Z",
+  "end": "2026-11-01T01:00:00Z",
+  "location": "TOS / MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Animation Movie Night",
+  "start": "2026-11-03T18:30:00Z",
+  "end": "2026-11-03T21:00:00Z",
+  "location": "IRC Seminar Room 1",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASL Club",
+  "title": "ASL Practice Session 4",
+  "start": "2026-11-05T18:00:00Z",
+  "end": "2026-11-05T19:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "RSA-DNA",
+  "title": "#MzansiBokkeFriday",
+  "start": "2026-11-06T17:00:00Z",
+  "end": "2026-11-06T23:00:00Z",
+  "location": "SAC Hall 3",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "AWS Student Builder Group",
+  "title": "AWS Certfications",
+  "start": "2026-11-06T18:00:00Z",
+  "end": "2026-11-06T19:00:00Z",
+  "location": "Campus Ring, 28759 Bremen, Germany",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "TOS Organized Bar Night",
+  "start": "2026-11-06T19:00:00Z",
+  "end": "2026-11-06T23:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Cultural Fair - cancelled",
+  "start": "2026-11-07T00:00:00Z",
+  "end": "2026-11-07T23:59:00Z",
+  "location": "IRC Foyer",
+  "category": "Cultural Fair & Exhibition",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "La Society (Latin American Society)",
+  "title": "Dia De Muertos - La Society",
+  "start": "2026-11-10T18:00:00Z",
+  "end": "2026-11-10T22:00:00Z",
+  "location": "SAC Hall 3",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Drama Movie Night",
+  "start": "2026-11-10T18:30:00Z",
+  "end": "2026-11-10T21:00:00Z",
+  "location": "Information Resource Centre (IRC) Seminar Room I",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Blood Drive",
+  "start": "2026-11-12T15:00:00Z",
+  "end": "2026-11-12T20:00:00Z",
+  "location": "IRC Foyer",
+  "category": "Charity Event",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASL Club",
+  "title": "ASL Practice Session 5",
+  "start": "2026-11-12T18:00:00Z",
+  "end": "2026-11-12T19:00:00Z",
+  "location": "IRC Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Christian Fellowship",
+  "title": "CF Annual Thanksgiving",
+  "start": "2026-11-13T17:30:00Z",
+  "end": "2026-11-13T21:00:00Z",
+  "location": "ICC East Wing (Next to the Coffee Bar)",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | K-POP Bar Night with SPECTRUM",
+  "start": "2026-11-13T19:00:00Z",
+  "end": "2026-11-13T22:00:00Z",
+  "location": "The Other Side (TOS)",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Cosplay Bar Night",
+  "start": "2026-11-13T19:00:00Z",
+  "end": "2026-11-13T23:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "SASA - South Asian Student Association",
+  "title": "Diwali",
+  "start": "2026-11-14T18:00:00Z",
+  "end": "2026-11-14T19:00:00Z",
+  "location": "",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Latin Party",
+  "start": "2026-11-14T21:00:00Z",
+  "end": "2026-11-15T01:00:00Z",
+  "location": "TOS/MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Indonesian Potluck",
+  "start": "2026-11-17T19:00:00Z",
+  "end": "2026-11-17T21:00:00Z",
+  "location": "Information Resource Centre (IRC) Small Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "The Global Review",
+  "title": "Internship Workshop",
+  "start": "2026-11-19T18:30:00Z",
+  "end": "2026-11-19T19:30:00Z",
+  "location": "Krupp E Seminar Hall",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Sync & Sound",
+  "start": "2026-11-20T19:00:00Z",
+  "end": "2026-11-20T21:00:00Z",
+  "location": "Arts & Culture Center",
+  "category": "Student Show",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Off Campus / GSA Bar Night",
+  "start": "2026-11-20T19:00:00Z",
+  "end": "2026-11-20T23:00:00Z",
+  "location": "TOS/MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "SASA - South Asian Student Association",
+  "title": "Movie Night",
+  "start": "2026-11-22T18:00:00Z",
+  "end": "2026-11-22T21:00:00Z",
+  "location": "",
+  "category": "Club events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Anime Movie Night",
+  "start": "2026-11-24T18:30:00Z",
+  "end": "2026-11-24T21:00:00Z",
+  "location": "Information Resource Centre (IRC) Seminar Room III",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Turkish Bar Night",
+  "start": "2026-11-27T19:00:00Z",
+  "end": "2026-11-27T23:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "End of semester Party",
+  "start": "2026-11-28T21:00:00Z",
+  "end": "2026-11-29T01:30:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "End of the Semester Party",
+  "start": "2026-11-28T21:00:00Z",
+  "end": "2026-11-29T01:00:00Z",
+  "location": "TOS/MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | Christmas Potluck",
+  "start": "2026-12-01T18:00:00Z",
+  "end": "2026-12-01T21:00:00Z",
+  "location": "Information Resource Centre (IRC) Small Seminar Room",
+  "category": "Club Events",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Student Clubs",
+  "title": "Winter Market",
+  "start": "2026-12-04T15:00:00Z",
+  "end": "2026-12-04T16:00:00Z",
+  "location": "tbc",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "TOS",
+  "title": "Last Bar Night of the semester: Christmas",
+  "start": "2026-12-04T19:00:00Z",
+  "end": "2026-12-04T23:00:00Z",
+  "location": "TOS/MusicLab",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "telc at CU",
+  "title": "telc B1 Exam Training I",
+  "start": "2026-12-08T00:00:00Z",
+  "end": "2026-12-08T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "telc at CU",
+  "title": "telc B2 Exam Training I",
+  "start": "2026-12-08T00:00:00Z",
+  "end": "2026-12-08T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "telc at CU",
+  "title": "telc B2 Exam Training II",
+  "start": "2026-12-22T00:00:00Z",
+  "end": "2026-12-22T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "telc at CU",
+  "title": "telc B1 Exam Training II",
+  "start": "2026-12-22T00:00:00Z",
+  "end": "2026-12-22T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "telc at CU",
+  "title": "B2 telc Exam",
+  "start": "2027-01-20T00:00:00Z",
+  "end": "2027-01-20T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "telc at CU",
+  "title": "B1 telc Exam",
+  "start": "2027-01-20T00:00:00Z",
+  "end": "2027-01-20T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": true,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "TestAS Exam on Campus (paper-based)",
+  "start": "2027-02-25T07:30:00Z",
+  "end": "2027-02-25T15:30:00Z",
+  "location": "",
+  "category": "",
+  "allday": false,
+  "id": ""
+ },
+ {
+  "site": "Pre-Degree Hub",
+  "title": "TestAS Exam on Campus (paper-based)",
+  "start": "2027-04-24T06:30:00Z",
+  "end": "2027-04-24T14:30:00Z",
+  "location": "",
+  "category": "",
+  "allday": false,
+  "id": ""
+ }
+]

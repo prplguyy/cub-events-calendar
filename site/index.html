@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CUB Events Calendar</title>
+<meta name="description" content="Subscribe to Constructor University campus, club, TOS and sports events in your own calendar.">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #14171f; --muted: #5d6472; --line: #e3e6eb;
+    --brand: #0b4f8a; --brand-ink: #ffffff; --soft: #e8f0f8; --ok: #1d7a46;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1218; --card: #171b23; --ink: #e8ebf0; --muted: #9aa3b2; --line: #272d38;
+            --brand: #5aa0e0; --brand-ink: #0b1220; --soft: #1b2a3c; --ok: #4cc283; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 32px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; margin: 40px 0 12px; }
+  .lede { color: var(--muted); margin: 0 0 24px; max-width: 60ch; }
+  .hero { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .hero strong { display: block; font-size: 18px; margin-bottom: 4px; }
+  .hero p { margin: 0 0 14px; color: var(--muted); }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+         padding: 14px 16px; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .list { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .name { font-weight: 600; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .actions { display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
+  a.btn, button.btn { appearance: none; border: 1px solid var(--line); background: var(--card); color: var(--ink);
+         padding: 7px 12px; border-radius: 8px; font: inherit; font-size: 14px; text-decoration: none; cursor: pointer;
+         white-space: nowrap; }
+  a.btn.primary { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+  .btn:hover { filter: brightness(0.96); }
+  .btn.copied { color: var(--ok); border-color: var(--ok); }
+  input[type=search] { width: 100%; padding: 11px 14px; border-radius: 10px; border: 1px solid var(--line);
+         background: var(--card); color: var(--ink); font: inherit; margin-bottom: 12px; }
+  .help { background: var(--soft); border-radius: 12px; padding: 14px 16px; font-size: 14px; color: var(--ink); margin-top: 40px; }
+  .help p { margin: 6px 0; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 24px; }
+  .empty { padding: 16px; color: var(--muted); }
+  @media (max-width: 560px) {
+    .row { flex-direction: column; align-items: flex-start; }
+    .actions { justify-content: flex-start; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>CUB Events Calendar</h1>
+  <p class="lede">Campus, club, TOS and sports events from the Student Clubs SharePoint, in your own calendar.
+    Subscribe once and new events appear automatically. Each subscription shows up as its own calendar you can tick on and off.</p>
+
+  <div class="hero">
+    <strong>Everything in one calendar</strong>
+    <p id="all-meta">Loading…</p>
+    <div class="actions" id="all-actions"></div>
+  </div>
+
+  <h2>By category</h2>
+  <div class="list" id="groups"></div>
+
+  <h2>Individual clubs</h2>
+  <input type="search" id="q" placeholder="Search clubs…" aria-label="Search clubs">
+  <div class="list" id="clubs"></div>
+
+  <div class="help">
+    <p><strong>Google Calendar:</strong> “Add to Google” opens Google Calendar and asks you to confirm. On a phone, do it once in a browser and it syncs to the app.</p>
+    <p><strong>Apple Calendar / Outlook desktop:</strong> “Apple / Outlook” opens your calendar app with a subscribe prompt.</p>
+    <p><strong>Outlook web or anything else:</strong> “Copy link” and paste it into “Subscribe from web” / “Add calendar from URL”.</p>
+    <p>Google refreshes subscribed calendars every few hours, so a brand-new event can take a while to appear.</p>
+  </div>
+  <footer id="updated"></footer>
+</main>
+<script>
+(async function () {
+  const base = new URL('.', location.href);
+  const httpsUrl = f => new URL(f, base).href;
+  const webcal = f => httpsUrl(f).replace(/^https?:/, 'webcal:');
+  const google = f => 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(f));
+  const fmt = iso => new Date(iso).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short',
+                       hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' });
+  const el = (tag, props = {}, kids = []) => { const n = Object.assign(document.createElement(tag), props); kids.forEach(k => n.append(k)); return n; };
+
+  function actions(file) {
+    const copy = el('button', { className: 'btn', type: 'button', textContent: 'Copy link' });
+    copy.onclick = async () => {
+      try { await navigator.clipboard.writeText(httpsUrl(file)); copy.textContent = 'Copied'; copy.classList.add('copied'); }
+      catch { prompt('Copy this link:', httpsUrl(file)); }
+      setTimeout(() => { copy.textContent = 'Copy link'; copy.classList.remove('copied'); }, 1800);
+    };
+    return [
+      el('a', { className: 'btn primary', href: google(file), target: '_blank', rel: 'noopener', textContent: 'Add to Google' }),
+      el('a', { className: 'btn', href: webcal(file), textContent: 'Apple / Outlook' }),
+      copy,
+    ];
+  }
+  const upcomingText = n => n === 0 ? 'No upcoming events right now' : n === 1 ? '1 upcoming event' : `${n} upcoming events`;
+  const row = (name, meta, file) => el('div', { className: 'row' }, [
+    el('div', {}, [el('div', { className: 'name', textContent: name }), el('div', { className: 'meta', textContent: meta })]),
+    el('div', { className: 'actions' }, actions(file)),
+  ]);
+
+  let data;
+  try { data = await (await fetch('calendars.json', { cache: 'no-store' })).json(); }
+  catch { document.getElementById('all-meta').textContent = 'Could not load the calendar list. Try refreshing.'; return; }
+
+  document.getElementById('all-meta').textContent = upcomingText(data.everything.upcoming) + ' across campus.';
+  document.getElementById('all-actions').append(...actions(data.everything.file));
+
+  const groups = document.getElementById('groups');
+  data.groups.forEach(g => groups.append(row(g.name, `${g.blurb} · ${upcomingText(g.upcoming)}`, g.file)));
+
+  const clubs = document.getElementById('clubs');
+  const clubRows = data.clubs.map(c => {
+    const meta = c.next ? `Next: ${c.next.title} · ${fmt(c.next.start)}` : upcomingText(0);
+    const r = row(c.name, meta, c.file); r.dataset.name = c.name.toLowerCase(); return r;
+  });
+  clubs.append(...clubRows);
+  const empty = el('div', { className: 'empty', textContent: 'No club matches that search.', hidden: true });
+  clubs.append(empty);
+  document.getElementById('q').addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase(); let shown = 0;
+    clubRows.forEach(r => { const hit = !q || r.dataset.name.includes(q); r.hidden = !hit; shown += hit; });
+    empty.hidden = shown > 0;
+  });
+
+  document.getElementById('updated').textContent =
+    `Last synced from SharePoint on ${data.updated}. Clubs appear here once they post an event on SharePoint.`;
+})();
+</script>
+</body>
+</html>
