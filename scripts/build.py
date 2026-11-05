@@ -19,6 +19,7 @@ GROUP_OF_SITE = {
     "Graduate Student Association": "usg",
     "Krupp Residential Support Assistants": "colleges",
     "College III - The place to be": "colleges",
+    "Off-Campus Student Hub": "campus",
     "Off Campus Student Hub": "campus",
     "Pre-Degree Hub": "services",
     "telc at CU": "services",
@@ -152,7 +153,10 @@ def main():
         shutil.rmtree(OUT)
     (OUT / "feeds").mkdir(parents=True)
 
-    by_group, by_club = {}, {}
+    # Every known club gets a calendar, even before it posts its first event, so a
+    # student who adds everything today also gets clubs that start posting later.
+    known = json.loads((ROOT / "data" / "clubs.json").read_text(encoding="utf-8"))
+    by_group, by_club = {}, {c: [] for c in known if c not in SKIP_SITES}
     for e in events:
         g = GROUP_OF_SITE.get(e["site"], "clubs")
         by_group.setdefault(g, []).append(e)
@@ -171,6 +175,8 @@ def main():
     for gid, name, blurb in GROUPS:
         evs = by_group.get(gid, [])
         write(f"{gid}.ics", name, evs, GROUP_COLOR[gid])
+        if gid == "clubs":
+            continue  # still published for existing subscribers, but the page adds each club separately
         manifest["groups"].append({"id": gid, "name": name, "blurb": blurb, "color": GROUP_COLOR[gid][1],
                                    "file": f"feeds/{gid}.ics", "upcoming": upcoming(evs)})
     for club, evs in sorted(by_club.items(), key=lambda x: x[0].lower()):
