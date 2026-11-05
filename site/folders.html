@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CUB Events Calendar · Folders</title>
+<meta name="description" content="Constructor University events, one calendar per club and category that you can tick on and off.">
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#14171f; --muted:#5d6472; --line:#e3e6eb; --brand:#0b4f8a; --brand-ink:#fff; --ok:#1d7a46; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1218; --card:#171b23; --ink:#e8ebf0; --muted:#9aa3b2; --line:#272d38; --brand:#5aa0e0; --brand-ink:#0b1220; --ok:#4cc283; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:32px; line-height:1.15; margin:0 0 12px; }
+  h2 { font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:28px 0 8px; }
+  .lede { color:var(--muted); margin:0 0 24px; }
+  .cta { display:block; text-align:center; background:var(--brand); color:var(--brand-ink); text-decoration:none; font-weight:700; font-size:18px; padding:16px 20px; border-radius:14px; }
+  .cta small { display:block; font-weight:400; font-size:14px; opacity:.85; margin-top:2px; }
+  .note { color:var(--muted); font-size:14px; margin:10px 0 0; }
+  input[type=search] { width:100%; padding:10px 12px; border-radius:12px; border:1px solid var(--line); background:var(--card); color:var(--ink); font:inherit; margin-top:20px; }
+  ul { list-style:none; margin:0; padding:0; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  li { display:flex; align-items:center; gap:12px; padding:10px 14px; border-top:1px solid var(--line); }
+  li:first-child { border-top:0; }
+  .dot { width:14px; height:14px; border-radius:50%; flex:none; }
+  .name { flex:1; min-width:0; }
+  .name b { font-weight:600; }
+  .name span { display:block; color:var(--muted); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .add { flex:none; text-decoration:none; color:var(--brand); border:1px solid var(--line); border-radius:10px; padding:6px 12px; font-size:14px; }
+  footer { color:var(--muted); font-size:13px; margin-top:28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CUB Events · Folders</h1>
+  <p class="lede">One calendar per category and per club. Add them all and tick on or off the ones you want in the “My calendars” list in Google Calendar, each with its own colour.</p>
+
+  <a class="cta" id="all" href="#" target="_blank" rel="noopener">Add all calendars<small id="sub">Loading…</small></a>
+  <p class="note">Google may only add part of the list at once. If some are missing, open this page again and press the button again; calendars you already have are skipped. You can also add single ones below.</p>
+
+  <input type="search" id="q" placeholder="Search clubs…">
+  <div id="lists"></div>
+  <footer id="updated"></footer>
+</main>
+<script>
+(async function () {
+  const base = new URL('../', location.href);
+  const webcal = f => new URL(f, base).href.replace(/^https?:/, 'webcal:');
+  const gcal = (...fs) => 'https://calendar.google.com/calendar/render?' + fs.map(f => 'cid=' + encodeURIComponent(webcal(f))).join('&');
+  let data;
+  try { data = await (await fetch('../calendars.json', { cache: 'no-store' })).json(); }
+  catch { document.getElementById('sub').textContent = 'Could not load. Try refreshing.'; return; }
+
+  const all = [...data.groups, ...data.clubs];
+  document.getElementById('all').href = gcal(...all.map(c => c.file));
+  document.getElementById('sub').textContent = `${all.length} calendars · ${data.everything.upcoming} upcoming events`;
+  document.getElementById('updated').textContent = `Last synced from SharePoint on ${data.updated}.`;
+
+  const row = (c, sub) => {
+    const li = document.createElement('li');
+    li.dataset.t = c.name.toLowerCase();
+    li.innerHTML = '<span class="dot"></span><div class="name"><b></b><span></span></div><a class="add" target="_blank" rel="noopener">Add</a>';
+    li.querySelector('.dot').style.background = c.color;
+    li.querySelector('b').textContent = c.name;
+    li.querySelector('.name span').textContent = sub;
+    li.querySelector('a').href = gcal(c.file);
+    return li;
+  };
+  const section = (title, items) => {
+    const wrap = document.getElementById('lists');
+    const h = document.createElement('h2'); h.textContent = title;
+    const ul = document.createElement('ul'); items.forEach(i => ul.appendChild(i));
+    wrap.append(h, ul);
+  };
+  section('Categories', data.groups.map(g => row(g, g.blurb)));
+  section('Clubs', data.clubs.map(c => row(c, c.next ? `Next: ${c.next.title}` : 'No upcoming events yet')));
+
+  document.getElementById('q').oninput = e => {
+    const q = e.target.value.trim().toLowerCase();
+    document.querySelectorAll('#lists li').forEach(li => li.style.display = li.dataset.t.includes(q) ? '' : 'none');
+  };
+})();
+</script>
+</body>
+</html>

@@ -71,6 +71,19 @@ def color_for(site):
     return PALETTE[_club_colors[site]]
 
 
+GROUP_EMOJI = {"campus": "🎓", "tos": "🍺", "sports": "⚽", "usg": "🏛️", "colleges": "🏠", "services": "📚"}
+DOT = {"crimson": "🔴", "darkorange": "🟠", "goldenrod": "🟡", "seagreen": "🟢", "teal": "🟢", "dodgerblue": "🔵",
+       "royalblue": "🔵", "slateblue": "🟣", "darkviolet": "🟣", "mediumvioletred": "🟣", "hotpink": "🔴", "sienna": "🟤",
+       "olivedrab": "🟢", "darkcyan": "🔵", "steelblue": "🔵", "indianred": "🔴", "chocolate": "🟤",
+       "mediumseagreen": "🟢", "darkslateblue": "🟣", "orchid": "🟣"}
+
+
+def tag_for(site):
+    """Emoji shown in front of the title in the single calendar, since Google can't colour per event."""
+    g = GROUP_OF_SITE.get(site)
+    return GROUP_EMOJI.get(g) or DOT.get(color_for(site)[0], "⚪")
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
@@ -99,7 +112,7 @@ def ics_time(t):
     return t[:19].replace("-", "").replace(":", "") + "Z"
 
 
-def vevent(e):
+def vevent(e, tag=False):
     uid = e.get("id") or hashlib.sha1(f'{e["site"]}|{e["title"]}|{e["start"]}'.encode()).hexdigest()[:20]
     lines = ["BEGIN:VEVENT", f"UID:{uid}@cub-events", "DTSTAMP:" + BUILD_STAMP, "LAST-MODIFIED:" + BUILD_STAMP]
     if e.get("allday"):
@@ -113,6 +126,8 @@ def vevent(e):
     first_word = e["site"].lower().split()[0] if e["site"] else ""
     if e["site"] not in ("Student Clubs", "TOS") and first_word and first_word not in title.lower():
         title = f'{title} ({e["site"]})'
+    if tag:
+        title = f"{tag_for(e['site'])} {title}"
     lines.append("SUMMARY:" + esc(title))
     if e.get("location"):
         lines.append("LOCATION:" + esc(e["location"]))
@@ -137,7 +152,7 @@ def vevent(e):
     return lines
 
 
-def calendar(name, events, color):
+def calendar(name, events, color, tag=False):
     lines = [
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//CUB Events//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
         "X-WR-CALNAME:" + esc(f"CUB · {name}"), "X-WR-TIMEZONE:Europe/Berlin",
@@ -145,7 +160,7 @@ def calendar(name, events, color):
         "COLOR:" + color[0], "X-APPLE-CALENDAR-COLOR:" + color[1],
     ]
     for e in events:
-        lines += vevent(e)
+        lines += vevent(e, tag)
     lines.append("END:VCALENDAR")
     return "\r\n".join(fold(l) for l in lines) + "\r\n"
 
@@ -169,14 +184,14 @@ def main():
     today = date.today().isoformat()
     upcoming = lambda evs: sum(1 for e in evs if e["start"][:10] >= today)
 
-    def write(fname, name, evs, color):
-        (OUT / "feeds" / fname).write_text(calendar(name, evs, color), encoding="utf-8", newline="")
+    def write(fname, name, evs, color, tag=False):
+        (OUT / "feeds" / fname).write_text(calendar(name, evs, color, tag), encoding="utf-8", newline="")
 
     # The main calendar students subscribe to. A new file name (rather than all.ics) means
     # Google fetches it fresh instead of reusing a copy cached before descriptions existed.
     manifest = {"updated": today, "everything": {"file": "feeds/cub-events.ics", "upcoming": upcoming(events)},
                 "groups": [], "clubs": []}
-    write("cub-events.ics", "Events", events, ("royalblue", "#4169E1"))
+    write("cub-events.ics", "Events", events, ("royalblue", "#4169E1"), tag=True)
     write("all.ics", "Everything", events, ("darkslategray", "#2F4F4F"))  # kept for early subscribers
     for gid, name, blurb in GROUPS:
         evs = by_group.get(gid, [])
@@ -195,6 +210,8 @@ def main():
     COLORS_FILE.write_text(json.dumps(_club_colors, indent=1, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     (OUT / "calendars.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False), encoding="utf-8")
     shutil.copy(ROOT / "site" / "index.html", OUT / "index.html")
+    (OUT / "folders").mkdir()
+    shutil.copy(ROOT / "site" / "folders.html", OUT / "folders" / "index.html")
     (OUT / ".nojekyll").write_text("")
     print(f'{len(events)} events, {len(manifest["groups"])} groups, {len(manifest["clubs"])} clubs')
 
