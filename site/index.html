@@ -4,64 +4,51 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CUB Events Calendar</title>
-<meta name="description" content="Add every Constructor University campus, club, TOS and sports calendar to Google Calendar in one click.">
+<meta name="description" content="Every Constructor University campus, club, TOS and sports event in your own calendar.">
 <style>
   :root {
     --bg: #f6f7f9; --card: #ffffff; --ink: #14171f; --muted: #5d6472; --line: #e3e6eb;
-    --brand: #0b4f8a; --brand-ink: #ffffff; --soft: #e8f0f8; --ok: #1d7a46;
+    --brand: #0b4f8a; --brand-ink: #ffffff; --ok: #1d7a46;
   }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #0f1218; --card: #171b23; --ink: #e8ebf0; --muted: #9aa3b2; --line: #272d38;
-            --brand: #5aa0e0; --brand-ink: #0b1220; --soft: #1b2a3c; --ok: #4cc283; }
+            --brand: #5aa0e0; --brand-ink: #0b1220; --ok: #4cc283; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
          font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 64px; }
+  main { max-width: 600px; margin: 0 auto; padding: 56px 16px 64px; }
   h1 { font-size: 34px; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em; }
   .lede { color: var(--muted); margin: 0 0 28px; }
   .cta { display: block; text-align: center; background: var(--brand); color: var(--brand-ink); text-decoration: none;
          font-weight: 700; font-size: 18px; padding: 16px 20px; border-radius: 14px; }
   .cta:hover { filter: brightness(1.05); }
   .cta small { display: block; font-weight: 400; font-size: 14px; opacity: .85; margin-top: 2px; }
-  .steps { margin: 20px 0 0; padding-left: 20px; color: var(--muted); }
-  .steps li { margin: 4px 0; }
-  h2 { font-size: 16px; margin: 40px 0 10px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--line);
-          border-radius: 999px; padding: 4px 10px; font-size: 14px; }
-  .dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
-  .alt { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-top: 40px; font-size: 15px; }
-  .alt p { margin: 0 0 10px; }
-  .alt .row { display: flex; gap: 8px; flex-wrap: wrap; }
-  .btn { appearance: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none;
-         padding: 8px 12px; border-radius: 10px; font: inherit; font-size: 14px; cursor: pointer; }
+  .alt { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .btn { flex: 1; text-align: center; appearance: none; border: 1px solid var(--line); background: var(--card); color: var(--ink);
+         text-decoration: none; padding: 10px 12px; border-radius: 12px; font: inherit; font-size: 15px; cursor: pointer; }
   .btn.copied { color: var(--ok); border-color: var(--ok); }
+  .notes { color: var(--muted); font-size: 14px; margin-top: 28px; }
+  .notes p { margin: 8px 0; }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
 </style>
 </head>
 <body>
 <main>
   <h1>CUB Events Calendar</h1>
-  <p class="lede">Every campus event, club, TOS night and sports event from the Student Clubs SharePoint, in your Google Calendar.
-    Each club and category arrives as its own calendar in its own colour. Untick the ones you don't care about. New events show up automatically.</p>
+  <p class="lede">Every campus event, club event, TOS night and sports event from the Student Clubs SharePoint, in one calendar.
+    Each event says which club hosts it and links to its SharePoint page. New and changed events show up automatically.</p>
 
-  <a class="cta" id="add" href="#">Add all calendars to Google<small id="add-sub">Loading…</small></a>
-  <ol class="steps">
-    <li>Google Calendar opens with every calendar listed and ticked.</li>
-    <li>Press <strong>Add all</strong>.</li>
-    <li>Later, untick any calendar under <em>Other calendars</em> to hide it, or remove it in Settings.</li>
-  </ol>
-
-  <h2>What's included</h2>
-  <div class="chips" id="chips"></div>
-
+  <a class="cta" id="google" href="#" target="_blank" rel="noopener">Add to Google Calendar<small id="sub">Loading…</small></a>
   <div class="alt">
-    <p><strong>Apple Calendar, Outlook or another app?</strong> These can only add one calendar per link, so use a single calendar with everything in it.</p>
-    <div class="row">
-      <a class="btn" id="all-webcal" href="#">Subscribe in Apple / Outlook</a>
-      <button class="btn" id="all-copy" type="button">Copy link</button>
-    </div>
+    <a class="btn" id="webcal" href="#">Apple / Outlook</a>
+    <button class="btn" id="copy" type="button">Copy link</button>
+  </div>
+
+  <div class="notes">
+    <p><strong>Google:</strong> press “Add to Google Calendar”, then confirm. On a phone, do it once in a browser and it syncs to the app.</p>
+    <p><strong>Outlook web or another app:</strong> copy the link and paste it into “Subscribe from web” / “Add calendar from URL”.</p>
+    <p>Calendar apps refresh subscriptions every few hours, so a brand-new event can take a while to appear.</p>
   </div>
   <footer id="updated"></footer>
 </main>
@@ -70,32 +57,19 @@
   const base = new URL('.', location.href);
   const httpsUrl = f => new URL(f, base).href;
   const webcal = f => httpsUrl(f).replace(/^https?:/, 'webcal:');
-  const google = files => 'https://calendar.google.com/calendar/render?' +
-    files.map(f => 'cid=' + encodeURIComponent(webcal(f))).join('&');
 
   let data;
   try { data = await (await fetch('calendars.json', { cache: 'no-store' })).json(); }
-  catch { document.getElementById('add-sub').textContent = 'Could not load the calendar list. Try refreshing.'; return; }
+  catch { document.getElementById('sub').textContent = 'Could not load. Try refreshing.'; return; }
+  const file = data.everything.file;
 
-  const cals = [...data.groups, ...data.clubs];
-  const add = document.getElementById('add');
-  add.href = google(cals.map(c => c.file));
-  add.target = '_blank'; add.rel = 'noopener';
-  document.getElementById('add-sub').textContent =
-    `${data.groups.length} categories + ${data.clubs.length} clubs · ${data.everything.upcoming} upcoming events`;
-
-  const chips = document.getElementById('chips');
-  cals.forEach(c => {
-    const chip = document.createElement('span'); chip.className = 'chip';
-    const dot = document.createElement('span'); dot.className = 'dot'; dot.style.background = c.color;
-    chip.append(dot, c.name); chips.append(chip);
-  });
-
-  document.getElementById('all-webcal').href = webcal(data.everything.file);
-  const copy = document.getElementById('all-copy');
+  document.getElementById('google').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(file));
+  document.getElementById('sub').textContent = `${data.everything.upcoming} upcoming events`;
+  document.getElementById('webcal').href = webcal(file);
+  const copy = document.getElementById('copy');
   copy.onclick = async () => {
-    try { await navigator.clipboard.writeText(httpsUrl(data.everything.file)); copy.textContent = 'Copied'; copy.classList.add('copied'); }
-    catch { prompt('Copy this link:', httpsUrl(data.everything.file)); }
+    try { await navigator.clipboard.writeText(httpsUrl(file)); copy.textContent = 'Copied'; copy.classList.add('copied'); }
+    catch { prompt('Copy this link:', httpsUrl(file)); }
     setTimeout(() => { copy.textContent = 'Copy link'; copy.classList.remove('copied'); }, 1800);
   };
   document.getElementById('updated').textContent = `Last synced from SharePoint on ${data.updated}.`;

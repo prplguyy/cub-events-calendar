@@ -3,7 +3,7 @@ import hashlib
 import json
 import re
 import shutil
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -92,13 +92,16 @@ def fold(line):
     return "\r\n".join(parts)
 
 
+BUILD_STAMP = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+
 def ics_time(t):
     return t[:19].replace("-", "").replace(":", "") + "Z"
 
 
 def vevent(e):
     uid = e.get("id") or hashlib.sha1(f'{e["site"]}|{e["title"]}|{e["start"]}'.encode()).hexdigest()[:20]
-    lines = ["BEGIN:VEVENT", f"UID:{uid}@cub-events", "DTSTAMP:" + ics_time(e["start"])]
+    lines = ["BEGIN:VEVENT", f"UID:{uid}@cub-events", "DTSTAMP:" + BUILD_STAMP, "LAST-MODIFIED:" + BUILD_STAMP]
     if e.get("allday"):
         d0 = date.fromisoformat(e["start"][:10])
         d1 = max(date.fromisoformat(e["end"][:10]), d0) + timedelta(days=1)
@@ -169,9 +172,12 @@ def main():
     def write(fname, name, evs, color):
         (OUT / "feeds" / fname).write_text(calendar(name, evs, color), encoding="utf-8", newline="")
 
-    manifest = {"updated": today, "everything": {"file": "feeds/all.ics", "upcoming": upcoming(events)},
+    # The main calendar students subscribe to. A new file name (rather than all.ics) means
+    # Google fetches it fresh instead of reusing a copy cached before descriptions existed.
+    manifest = {"updated": today, "everything": {"file": "feeds/cub-events.ics", "upcoming": upcoming(events)},
                 "groups": [], "clubs": []}
-    write("all.ics", "Everything", events, ("darkslategray", "#2F4F4F"))
+    write("cub-events.ics", "Events", events, ("royalblue", "#4169E1"))
+    write("all.ics", "Everything", events, ("darkslategray", "#2F4F4F"))  # kept for early subscribers
     for gid, name, blurb in GROUPS:
         evs = by_group.get(gid, [])
         write(f"{gid}.ics", name, evs, GROUP_COLOR[gid])
