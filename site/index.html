@@ -77,7 +77,7 @@
   <div class="list" id="clubs"></div>
 
   <div class="help">
-    <p><strong>Google Calendar:</strong> “Add to Google” opens Google Calendar and asks you to confirm. On a phone, do it once in a browser and it syncs to the app.</p>
+    <p><strong>Google Calendar:</strong> “Add to Google” opens Google Calendar with everything you ticked; press “Add all”. On a phone, do it once in a browser and it syncs to the app.</p>
     <p><strong>Apple Calendar / Outlook desktop:</strong> use “Apple / Outlook” next to each calendar; each opens a subscribe prompt.</p>
     <p><strong>Outlook web or anything else:</strong> “Copy link” and paste it into “Subscribe from web” / “Add calendar from URL”.</p>
     <p>Want everything as a single calendar instead? <a id="all-link" href="#">Add “Everything” to Google</a>. That's one checkbox for all events.</p>
@@ -89,7 +89,6 @@
 <div class="bar">
   <div class="bar-inner">
     <div class="count" id="count">0 calendars selected<span></span></div>
-    <button class="btn" id="step" type="button">Add one at a time</button>
     <button class="btn primary" id="add" type="button">Add to Google</button>
   </div>
 </div>
@@ -150,26 +149,15 @@
     empty.hidden = shown > 0;
   });
 
-  const countEl = document.getElementById('count'), addBtn = document.getElementById('add'), stepBtn = document.getElementById('step');
-  let queue = null;
+  const countEl = document.getElementById('count'), addBtn = document.getElementById('add');
   const selected = () => items.filter(i => i.box.checked);
   function update() {
-    queue = null; stepBtn.textContent = 'Add one at a time';
     const n = selected().length;
     countEl.firstChild.textContent = n === 1 ? '1 calendar selected' : `${n} calendars selected`;
     countEl.querySelector('span').textContent = n ? selected().map(i => i.name).join(', ') : 'Tick the calendars you want';
-    addBtn.disabled = stepBtn.disabled = n === 0;
+    addBtn.disabled = n === 0;
   }
   addBtn.onclick = () => window.open(googleMany(selected().map(i => i.file)), '_blank', 'noopener');
-  // Fallback if Google only picks up the first calendar: open them one by one.
-  stepBtn.onclick = () => {
-    if (!queue) queue = selected().slice();
-    const next = queue.shift();
-    if (!next) return;
-    window.open(googleMany([next.file]), '_blank', 'noopener');
-    stepBtn.textContent = queue.length ? `Add next (${queue[0].name})` : 'All added';
-    if (!queue.length) { stepBtn.disabled = true; }
-  };
   update();
 
   document.getElementById('all-link').href = googleMany([data.everything.file]);
