@@ -44,9 +44,10 @@
     Each event says which club hosts it and links to its SharePoint page. New and changed events show up automatically.</p>
 
 <div class="phone" id="android"><span class="h">On an Android phone?</span>
-<ol><li>Tap the button below and confirm. The Google Calendar app may open and say it was added.</li>
-<li>The new calendar is usually hidden at first: in the app, open the menu → Settings → <b>CUB · Events</b> → turn on <b>Sync</b>.</li>
-<li>Not listed there? Add it once on a laptop at calendar.google.com with the same Google account; it then appears on the phone.</li></ol></div>
+<ol><li>Tap the blue button. It opens Google Calendar in your browser, not the app.</li>
+<li>If Google shows its phone page instead of “Add calendar”, open the browser menu (⋮), tick <b>Desktop site</b>, and confirm “Add”.</li>
+<li>Then in the Calendar app: menu → Settings → the new CUB calendar → turn on <b>Sync</b>.</li></ol>
+Plan B: tap <b>Copy link</b>, type calendar.google.com in the address bar with Desktop site on, then Settings → Add calendar → From URL → paste.</div>
 <div class="phone" id="ios"><span class="h">On an iPhone?</span>Tap <b>Add to iPhone Calendar</b>, then “Subscribe”. It works straight from the phone. Google Calendar users: do it once on a laptop instead; the app can’t add calendars.</div>
   <a class="cta" id="google" href="#" target="_blank" rel="noopener">Add to Google Calendar<small id="sub">Loading…</small></a>
   <div class="alt">
@@ -72,9 +73,18 @@
   catch { document.getElementById('sub').textContent = 'Could not load. Try refreshing.'; return; }
   const file = data.everything.file;
 
+  document.getElementById('google').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(file));
+  document.getElementById('webcal').href = webcal(file);
   const ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), isAndroid = /Android/.test(ua);
   if (isAndroid) document.getElementById('android').style.display = 'block';
   if (isIOS) document.getElementById('ios').style.display = 'block';
+
+  // Android: the Google Calendar app hijacks calendar.google.com links and then fails to add the
+  // calendar. An intent addressed to the browser itself keeps the page in the browser.
+  const browserPkg = () => navigator.brave ? 'com.brave.browser' : /SamsungBrowser/.test(ua) ? 'com.sec.android.app.sbrowser'
+    : /Firefox/.test(ua) ? 'org.mozilla.firefox' : /EdgA/.test(ua) ? 'com.microsoft.emmx' : 'com.android.chrome';
+  const inBrowser = url => isAndroid ? 'intent://' + url.replace(/^https:\/\//, '') + '#Intent;scheme=https;package=' + browserPkg() + ';end' : url;
+  if (isAndroid) { const g = document.getElementById('google'); g.href = inBrowser(g.href); g.removeAttribute('target'); }
   if (isIOS) {  // Apple Calendar is the one-tap path on iPhone, so make it the big button
     const g = document.getElementById('google'), w = document.getElementById('webcal');
     g.firstChild.textContent = 'Add to iPhone Calendar'; g.removeAttribute('target');
@@ -82,7 +92,6 @@
     setTimeout(() => { const h = g.href; g.href = w.href; w.href = h; w.target = '_blank'; }, 0);
   }
 
-  document.getElementById('google').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(file));
   document.getElementById('sub').textContent = `${data.everything.upcoming} upcoming events`;
   document.getElementById('webcal').href = webcal(file);
   const copy = document.getElementById('copy');

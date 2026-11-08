@@ -41,9 +41,10 @@
   <p class="lede">One calendar per category and per club. Add them all and tick on or off the ones you want in the “My calendars” list in Google Calendar, each with its own colour.</p>
 
 <div class="phone" id="android"><span class="h">On an Android phone?</span>
-<ol><li>Tap the button below and confirm. The Google Calendar app may open and say it was added.</li>
-<li>The new calendar is usually hidden at first: in the app, open the menu → Settings → each CUB calendar → turn on <b>Sync</b>.</li>
-<li>Not listed there? Add it once on a laptop at calendar.google.com with the same Google account; it then appears on the phone.</li></ol></div>
+<ol><li>Tap “Add all” (or Add next to one club). It opens Google Calendar in your browser, not the app.</li>
+<li>If Google shows its phone page instead of “Add calendar”, open the browser menu (⋮), tick <b>Desktop site</b>, and confirm “Add”.</li>
+<li>Then in the Calendar app: menu → Settings → the new CUB calendar → turn on <b>Sync</b>.</li></ol>
+Plan B: open this page once on a laptop and press “Add all” there; the calendars then appear on your phone.</div>
 <div class="phone" id="ios"><span class="h">On an iPhone?</span>“Add all” is for Google Calendar and works best on a laptop. To add clubs straight to the iPhone Calendar, tap <b>Add</b> next to each one and choose “Subscribe”.</div>
   <a class="cta" id="all" href="#" target="_blank" rel="noopener">Add all calendars<small id="sub">Loading…</small></a>
   <p class="note">Google may only add part of the list at once. If some are missing, open this page again and press the button again; calendars you already have are skipped. You can also add single ones below.</p>
@@ -65,8 +66,15 @@
   const ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), isAndroid = /Android/.test(ua);
   if (isAndroid) document.getElementById('android').style.display = 'block';
   if (isIOS) document.getElementById('ios').style.display = 'block';
+
+  // Android: the Google Calendar app hijacks calendar.google.com links and then fails to add the
+  // calendar. An intent addressed to the browser itself keeps the page in the browser.
+  const browserPkg = () => navigator.brave ? 'com.brave.browser' : /SamsungBrowser/.test(ua) ? 'com.sec.android.app.sbrowser'
+    : /Firefox/.test(ua) ? 'org.mozilla.firefox' : /EdgA/.test(ua) ? 'com.microsoft.emmx' : 'com.android.chrome';
+  const inBrowser = url => isAndroid ? 'intent://' + url.replace(/^https:\/\//, '') + '#Intent;scheme=https;package=' + browserPkg() + ';end' : url;
   const all = [...data.groups, ...data.clubs];
-  document.getElementById('all').href = gcal(...all.map(c => c.file));
+  document.getElementById('all').href = inBrowser(gcal(...all.map(c => c.file)));
+  if (isAndroid) document.getElementById('all').removeAttribute('target');
   document.getElementById('sub').textContent = `${all.length} calendars · ${data.everything.upcoming} upcoming events`;
   document.getElementById('updated').textContent = `Last synced from SharePoint on ${data.updated}.`;
 
@@ -78,7 +86,7 @@
     li.querySelector('b').textContent = c.name;
     li.querySelector('.name span').textContent = sub;
     const a = li.querySelector('a');
-    if (isIOS) { a.href = webcal(c.file); a.removeAttribute('target'); } else a.href = gcal(c.file);
+    if (isIOS) { a.href = webcal(c.file); a.removeAttribute('target'); } else { a.href = inBrowser(gcal(c.file)); if (isAndroid) a.removeAttribute('target'); }
     return li;
   };
   const section = (title, items) => {
