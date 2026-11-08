@@ -30,6 +30,10 @@
   .btn.copied { color: var(--ok); border-color: var(--ok); }
   .notes { color: var(--muted); font-size: 14px; margin-top: 28px; }
   .notes p { margin: 8px 0; }
+  .phone { display:none; border:1.5px solid #e0c36a; background:#fff8e1; color:#4a3b00; border-radius:14px; padding:14px 16px; margin:0 0 18px; font-size:15px; }
+  .phone .h { display:block; font-weight:700; margin-bottom:4px; }
+  .phone ol { margin:6px 0 8px; padding-left:20px; background:none; border:0; border-radius:0; } .phone li { display:list-item; padding:0; border:0; margin-bottom:4px; }
+  @media (prefers-color-scheme: dark) { .phone { background:#2a2410; color:#f3e3a6; border-color:#6b5a1f; } }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
 </style>
 </head>
@@ -39,6 +43,12 @@
   <p class="lede">Every campus event, club event, TOS night and sports event from the Student Clubs SharePoint, in one calendar.
     Each event says which club hosts it and links to its SharePoint page. New and changed events show up automatically.</p>
 
+<div class="phone" id="android"><span class="h">On an Android phone?</span>The Google Calendar app can’t add calendars, so add it once in the browser and it then shows up in the app.
+<ol><li>Tap the button below. If Google opens its normal page instead of “Add calendar”, tap the browser menu (⋮), tick <b>Desktop site</b>, then open this page and tap the button again.</li>
+<li>Confirm “Add”.</li>
+<li>If it isn’t in the app after a few minutes: app menu → Settings → <b>CUB · Events</b> → turn on Sync.</li></ol>
+Easiest alternative: do it once on a laptop with the same Google account.</div>
+<div class="phone" id="ios"><span class="h">On an iPhone?</span>Tap <b>Add to iPhone Calendar</b>, then “Subscribe”. It works straight from the phone. Google Calendar users: do it once on a laptop instead; the app can’t add calendars.</div>
   <a class="cta" id="google" href="#" target="_blank" rel="noopener">Add to Google Calendar<small id="sub">Loading…</small></a>
   <div class="alt">
     <a class="btn" id="webcal" href="#">Apple / Outlook</a>
@@ -62,6 +72,16 @@
   try { data = await (await fetch('calendars.json', { cache: 'no-store' })).json(); }
   catch { document.getElementById('sub').textContent = 'Could not load. Try refreshing.'; return; }
   const file = data.everything.file;
+
+  const ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), isAndroid = /Android/.test(ua);
+  if (isAndroid) document.getElementById('android').style.display = 'block';
+  if (isIOS) document.getElementById('ios').style.display = 'block';
+  if (isIOS) {  // Apple Calendar is the one-tap path on iPhone, so make it the big button
+    const g = document.getElementById('google'), w = document.getElementById('webcal');
+    g.firstChild.textContent = 'Add to iPhone Calendar'; g.removeAttribute('target');
+    w.textContent = 'Google Calendar';
+    setTimeout(() => { const h = g.href; g.href = w.href; w.href = h; w.target = '_blank'; }, 0);
+  }
 
   document.getElementById('google').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(file));
   document.getElementById('sub').textContent = `${data.everything.upcoming} upcoming events`;

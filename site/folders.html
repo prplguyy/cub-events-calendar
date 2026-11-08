@@ -28,6 +28,10 @@
   .name b { font-weight:600; }
   .name span { display:block; color:var(--muted); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .add { flex:none; text-decoration:none; color:var(--brand); border:1px solid var(--line); border-radius:10px; padding:6px 12px; font-size:14px; }
+  .phone { display:none; border:1.5px solid #e0c36a; background:#fff8e1; color:#4a3b00; border-radius:14px; padding:14px 16px; margin:0 0 18px; font-size:15px; }
+  .phone .h { display:block; font-weight:700; margin-bottom:4px; }
+  .phone ol { margin:6px 0 8px; padding-left:20px; background:none; border:0; border-radius:0; } .phone li { display:list-item; padding:0; border:0; margin-bottom:4px; }
+  @media (prefers-color-scheme: dark) { .phone { background:#2a2410; color:#f3e3a6; border-color:#6b5a1f; } }
   footer { color:var(--muted); font-size:13px; margin-top:28px; }
 </style>
 </head>
@@ -36,6 +40,12 @@
   <h1>CUB Events · Folders</h1>
   <p class="lede">One calendar per category and per club. Add them all and tick on or off the ones you want in the “My calendars” list in Google Calendar, each with its own colour.</p>
 
+<div class="phone" id="android"><span class="h">On an Android phone?</span>The Google Calendar app can’t add calendars, so add it once in the browser and it then shows up in the app.
+<ol><li>Tap “Add all” below. If Google opens its normal page instead of “Add calendar”, tap the browser menu (⋮), tick <b>Desktop site</b>, then open this page and tap the button again.</li>
+<li>Confirm “Add”.</li>
+<li>If it isn’t in the app after a few minutes: app menu → Settings → each CUB calendar → turn on Sync.</li></ol>
+Easiest alternative: do it once on a laptop with the same Google account.</div>
+<div class="phone" id="ios"><span class="h">On an iPhone?</span>“Add all” is for Google Calendar and works best on a laptop. To add clubs straight to the iPhone Calendar, tap <b>Add</b> next to each one and choose “Subscribe”.</div>
   <a class="cta" id="all" href="#" target="_blank" rel="noopener">Add all calendars<small id="sub">Loading…</small></a>
   <p class="note">Google may only add part of the list at once. If some are missing, open this page again and press the button again; calendars you already have are skipped. You can also add single ones below.</p>
 
@@ -52,6 +62,10 @@
   try { data = await (await fetch('../calendars.json', { cache: 'no-store' })).json(); }
   catch { document.getElementById('sub').textContent = 'Could not load. Try refreshing.'; return; }
 
+
+  const ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), isAndroid = /Android/.test(ua);
+  if (isAndroid) document.getElementById('android').style.display = 'block';
+  if (isIOS) document.getElementById('ios').style.display = 'block';
   const all = [...data.groups, ...data.clubs];
   document.getElementById('all').href = gcal(...all.map(c => c.file));
   document.getElementById('sub').textContent = `${all.length} calendars · ${data.everything.upcoming} upcoming events`;
@@ -64,7 +78,8 @@
     li.querySelector('.dot').style.background = c.color;
     li.querySelector('b').textContent = c.name;
     li.querySelector('.name span').textContent = sub;
-    li.querySelector('a').href = gcal(c.file);
+    const a = li.querySelector('a');
+    if (isIOS) { a.href = webcal(c.file); a.removeAttribute('target'); } else a.href = gcal(c.file);
     return li;
   };
   const section = (title, items) => {
