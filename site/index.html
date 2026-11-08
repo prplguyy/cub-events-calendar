@@ -43,11 +43,12 @@
   <p class="lede">Every campus event, club event, TOS night and sports event from the Student Clubs SharePoint, in one calendar.
     Each event says which club hosts it and links to its SharePoint page. New and changed events show up automatically.</p>
 
-<div class="phone" id="android"><span class="h">On an Android phone?</span>
-<ol><li>Tap the blue button. It opens Google Calendar in your browser, not the app.</li>
-<li>If Google shows its phone page instead of “Add calendar”, open the browser menu (⋮), tick <b>Desktop site</b>, and confirm “Add”.</li>
-<li>Then in the Calendar app: menu → Settings → the new CUB calendar → turn on <b>Sync</b>.</li></ol>
-Plan B: tap <b>Copy link</b>, type calendar.google.com in the address bar with Desktop site on, then Settings → Add calendar → From URL → paste.</div>
+<div class="phone" id="android"><span class="h">On an Android phone?</span>The Google Calendar app opens Google’s add-links and then doesn’t add anything, so add it by pasting the link instead:
+<ol><li>Tap the blue button to copy the calendar link.</li>
+<li>Open a new tab, type <b>calendar.google.com</b> in the address bar, open the browser menu (⋮) and tick <b>Desktop site</b>.</li>
+<li>Next to “Other calendars” tap <b>+</b> → <b>From URL</b>, paste, and tap <b>Add calendar</b>.</li>
+<li>In the Calendar app: menu → Settings → the new CUB calendar → turn on <b>Sync</b>.</li></ol>
+Or do it once on a laptop; it then shows up on your phone too.</div>
 <div class="phone" id="ios"><span class="h">On an iPhone?</span>Tap <b>Add to iPhone Calendar</b>, then “Subscribe”. It works straight from the phone. Google Calendar users: do it once on a laptop instead; the app can’t add calendars.</div>
   <a class="cta" id="google" href="#" target="_blank" rel="noopener">Add to Google Calendar<small id="sub">Loading…</small></a>
   <div class="alt">
@@ -76,15 +77,18 @@ Plan B: tap <b>Copy link</b>, type calendar.google.com in the address bar with D
   document.getElementById('google').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(file));
   document.getElementById('webcal').href = webcal(file);
   const ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), isAndroid = /Android/.test(ua);
-  if (isAndroid) document.getElementById('android').style.display = 'block';
+  if (isAndroid) { document.getElementById('android').style.display = 'block'; document.querySelector('.notes').style.display = 'none'; }
   if (isIOS) document.getElementById('ios').style.display = 'block';
 
-  // Android: the Google Calendar app hijacks calendar.google.com links and then fails to add the
-  // calendar. An intent addressed to the browser itself keeps the page in the browser.
-  const browserPkg = () => navigator.brave ? 'com.brave.browser' : /SamsungBrowser/.test(ua) ? 'com.sec.android.app.sbrowser'
-    : /Firefox/.test(ua) ? 'org.mozilla.firefox' : /EdgA/.test(ua) ? 'com.microsoft.emmx' : 'com.android.chrome';
-  const inBrowser = url => isAndroid ? 'intent://' + url.replace(/^https:\/\//, '') + '#Intent;scheme=https;package=' + browserPkg() + ';end' : url;
-  if (isAndroid) { const g = document.getElementById('google'); g.href = inBrowser(g.href); g.removeAttribute('target'); }
+  const copyText = async (btn, text, label) => {
+    try { await navigator.clipboard.writeText(text); } catch { prompt('Copy this link:', text); }
+    const old = btn.innerHTML; btn.innerHTML = label; setTimeout(() => btn.innerHTML = old, 2500);
+  };
+  if (isAndroid) {
+    const g = document.getElementById('google');
+    g.firstChild.textContent = 'Copy calendar link'; g.removeAttribute('target'); g.href = '#';
+    g.onclick = ev => { ev.preventDefault(); copyText(g, httpsUrl(file), 'Copied ✓<small>Now follow the steps above</small>'); };
+  }
   if (isIOS) {  // Apple Calendar is the one-tap path on iPhone, so make it the big button
     const g = document.getElementById('google'), w = document.getElementById('webcal');
     g.firstChild.textContent = 'Add to iPhone Calendar'; g.removeAttribute('target');
