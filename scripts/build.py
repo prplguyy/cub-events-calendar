@@ -168,6 +168,7 @@ def fetch_external():
         return out
     for src in json.loads(EXTERNAL.read_text(encoding="utf-8")):
         cache = ROOT / "data" / "external" / f'{src["id"]}.ics'
+        cache.parent.mkdir(exist_ok=True)
         try:
             req = urllib.request.Request(src["url"], headers={"User-Agent": "cub-events-calendar"})
             text = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
