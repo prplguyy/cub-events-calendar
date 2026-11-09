@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 import shutil
+import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -36,7 +37,7 @@ GROUPS = [
     ("clubs", "All Clubs", "Every event posted by any student club"),
     ("tos", "TOS", "Bar nights and parties at The Other Side"),
     ("sports", "Student Sports", "Recreation Center and sports events"),
-    ("usg", "Student Government", "USG and GSA events (coming soon)"),
+    ("usg", "Student Government", "USG committee meetings, Parliament and office hours"),
     ("colleges", "Residential Colleges", "College and RSA events (coming soon)"),
     ("services", "Academic Services", "Pre-Degree Hub, telc and other university services"),
 ]
@@ -152,13 +153,71 @@ def vevent(e, tag=False):
     return lines
 
 
-def calendar(name, events, color, tag=False):
+EXTERNAL = ROOT / "data" / "external.json"
+
+
+def unfold(text):
+    return text.replace("\r\n", "\n").replace("\n ", "").replace("\n\t", "").split("\n")
+
+
+def fetch_external():
+    """Google calendars run by USG, colleges etc. Returns {group: (vevent_lines, vtimezone_lines)}.
+    The last good copy is kept in data/external/ so a failed fetch never empties a calendar."""
+    out = {}
+    if not EXTERNAL.exists():
+        return out
+    for src in json.loads(EXTERNAL.read_text(encoding="utf-8")):
+        cache = ROOT / "data" / "external" / f'{src["id"]}.ics'
+        try:
+            req = urllib.request.Request(src["url"], headers={"User-Agent": "cub-events-calendar"})
+            text = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
+            if "BEGIN:VCALENDAR" not in text:
+                raise ValueError("not a calendar")
+            cache.write_text(text, encoding="utf-8")
+        except Exception as ex:
+            print(f'WARNING: could not fetch {src["id"]}: {ex}; using cached copy' if cache.exists() else f'WARNING: could not fetch {src["id"]}: {ex}')
+            if not cache.exists():
+                continue
+            text = cache.read_text(encoding="utf-8")
+        events, tzs, cur, kind = [], [], None, None
+        for line in unfold(text):
+            if line in ("BEGIN:VEVENT", "BEGIN:VTIMEZONE") and cur is None:
+                cur, kind = [line], line[6:]
+            elif cur is not None:
+                cur.append(line)
+                if line == f"END:{kind}":
+                    if kind == "VEVENT":
+                        events.append(cur)
+                    else:
+                        tzs.append(cur)
+                    cur = None
+        ev, tz = out.setdefault(src["group"], ([], []))
+        ev.extend(events)
+        tz.extend(t for t in tzs if t not in tz)
+        print(f'{src["id"]}: {len(events)} events from Google Calendar')
+    return out
+
+
+EXT = {}
+
+
+def ext_lines(groups):
+    tz, ev = [], []
+    for g in groups:
+        e, t = EXT.get(g, ([], []))
+        tz += [x for x in t if x not in tz]
+        ev += e
+    return [l for block in tz for l in block] + [l for block in ev for l in block]
+
+
+def calendar(name, events, color, tag=False, ext_groups=()):
     lines = [
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//CUB Events//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
         "X-WR-CALNAME:" + esc(f"CUB · {name}"), "X-WR-TIMEZONE:Europe/Berlin",
         "REFRESH-INTERVAL;VALUE=DURATION:PT3H", "X-PUBLISHED-TTL:PT3H",
         "COLOR:" + color[0], "X-APPLE-CALENDAR-COLOR:" + color[1],
     ]
+    lines += ext_lines(ext_groups)
     for e in events:
         lines += vevent(e, tag)
     lines.append("END:VCALENDAR")
@@ -167,6 +226,8 @@ def calendar(name, events, color, tag=False):
 
 def main():
     events = [e for e in json.loads(DATA.read_text(encoding="utf-8")) if e["site"] not in SKIP_SITES]
+    global EXT
+    EXT = fetch_external()
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "feeds").mkdir(parents=True)
@@ -184,18 +245,18 @@ def main():
     today = date.today().isoformat()
     upcoming = lambda evs: sum(1 for e in evs if e["start"][:10] >= today)
 
-    def write(fname, name, evs, color, tag=False):
-        (OUT / "feeds" / fname).write_text(calendar(name, evs, color, tag), encoding="utf-8", newline="")
+    def write(fname, name, evs, color, tag=False, ext=()):
+        (OUT / "feeds" / fname).write_text(calendar(name, evs, color, tag, ext), encoding="utf-8", newline="")
 
     # The main calendar students subscribe to. A new file name (rather than all.ics) means
     # Google fetches it fresh instead of reusing a copy cached before descriptions existed.
     manifest = {"updated": today, "everything": {"file": "feeds/cub-events.ics", "upcoming": upcoming(events)},
                 "groups": [], "clubs": []}
-    write("cub-events.ics", "Events", events, ("royalblue", "#4169E1"), tag=True)
-    write("all.ics", "Everything", events, ("darkslategray", "#2F4F4F"))  # kept for early subscribers
+    write("cub-events.ics", "Events", events, ("royalblue", "#4169E1"), tag=True, ext=list(EXT))
+    write("all.ics", "Everything", events, ("darkslategray", "#2F4F4F"), ext=list(EXT))  # kept for early subscribers
     for gid, name, blurb in GROUPS:
         evs = by_group.get(gid, [])
-        write(f"{gid}.ics", name, evs, GROUP_COLOR[gid])
+        write(f"{gid}.ics", name, evs, GROUP_COLOR[gid], ext=[gid] if gid in EXT else [])
         if gid == "clubs":
             continue  # still published for existing subscribers, but the page adds each club separately
         manifest["groups"].append({"id": gid, "name": name, "blurb": blurb, "color": GROUP_COLOR[gid][1],
