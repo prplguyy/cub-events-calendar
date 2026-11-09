@@ -34,6 +34,8 @@
   .phone .h { display:block; font-weight:700; margin-bottom:4px; }
   .phone ol { margin:6px 0 8px; padding-left:20px; background:none; border:0; border-radius:0; } .phone li { display:list-item; padding:0; border:0; margin-bottom:4px; }
   @media (prefers-color-scheme: dark) { .phone { background:#2a2410; color:#f3e3a6; border-color:#6b5a1f; } }
+  .phone details { margin-top:4px; } .phone summary { cursor:pointer; font-weight:700; }
+  .phone hr { border:0; border-top:1px solid #e0c36a; margin:12px 0; }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
 </style>
 </head>
@@ -48,7 +50,12 @@
 <li><b>Press and hold</b> this link and choose <b>Open in new tab</b> (a normal tap opens the app, which doesn’t work): <a href="https://calendar.google.com/calendar/r/settings/addbyurl" style="color:inherit;font-weight:700">Google Calendar → Add by URL</a></li>
 <li>In that tab, open the browser menu (⋮) and tick <b>Desktop site</b>. Paste the link into “URL of calendar” and tap <b>Add calendar</b>. (If you land on the main calendar instead, tap <b>+</b> next to “Other calendars” → <b>From URL</b>.)</li>
 <li>In the Calendar app: menu → Settings → the new CUB calendar → turn on <b>Sync</b>.</li></ol>
-Or do it once on a laptop; it then shows up on your phone too.</div>
+Or do it once on a laptop; it then shows up on your phone too.<hr><details id="outlook"><summary>Using Outlook instead? (CUB email or outlook.com)</summary>
+The Outlook app can’t subscribe to calendars either, so it’s the same idea:
+<ol><li>Tap <b>Copy calendar link</b> (the blue button).</li>
+<li><b>Press and hold</b> one of these and choose <b>Open in new tab</b>: <a href="https://outlook.office.com/calendar/addcalendar" style="color:inherit;font-weight:700">CUB Outlook</a> or <a href="https://outlook.live.com/calendar/0/addcalendar" style="color:inherit;font-weight:700">personal Outlook</a>.</li>
+<li>Sign in if asked, tick <b>Desktop site</b> in the browser menu (⋮), then choose <b>Subscribe from web</b>, paste the link, give it a name and tap <b>Import</b>.</li>
+<li>It then appears in the Outlook app by itself.</li></ol></details></div>
 <div class="phone" id="ios"><span class="h">On an iPhone?</span>Tap <b>Add to iPhone Calendar</b>, then “Subscribe”. It works straight from the phone. Google Calendar users: do it once on a laptop instead; the app can’t add calendars.</div>
   <a class="cta" id="google" href="#" target="_blank" rel="noopener">Add to Google Calendar<small id="sub">Loading…</small></a>
   <div class="alt">
@@ -77,7 +84,11 @@ Or do it once on a laptop; it then shows up on your phone too.</div>
   document.getElementById('google').href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal(file));
   document.getElementById('webcal').href = webcal(file);
   const ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), isAndroid = /Android/.test(ua);
-  if (isAndroid) { document.getElementById('android').style.display = 'block'; document.querySelector('.notes').style.display = 'none'; }
+  if (isAndroid) {
+    const w = document.getElementById('webcal'); w.textContent = 'Outlook'; w.href = '#outlook';
+    w.onclick = ev => { ev.preventDefault(); const d = document.getElementById('outlook'); d.open = true; d.scrollIntoView({behavior: 'smooth', block: 'center'}); };
+    document.getElementById('copy').style.display = 'none';  // the blue button already copies
+    document.getElementById('android').style.display = 'block'; document.querySelector('.notes').style.display = 'none'; }
   if (isIOS) document.getElementById('ios').style.display = 'block';
 
   const copyText = async (btn, text, label) => {
@@ -97,7 +108,7 @@ Or do it once on a laptop; it then shows up on your phone too.</div>
   }
 
   document.getElementById('sub').textContent = `${data.everything.upcoming} upcoming events`;
-  document.getElementById('webcal').href = webcal(file);
+  if (!isAndroid) document.getElementById('webcal').href = webcal(file);
   const copy = document.getElementById('copy');
   copy.onclick = async () => {
     try { await navigator.clipboard.writeText(httpsUrl(file)); copy.textContent = 'Copied'; copy.classList.add('copied'); }
