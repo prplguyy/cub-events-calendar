@@ -1092,6 +1092,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=23"
  },
  {
+  "site": "CTL Hub",
+  "title": "Workshop for Fall 2026 E-Exams, 12:45-13:45",
+  "start": "2026-11-18T11:45:00Z",
+  "end": "2026-11-18T12:45:00Z",
+  "location": "IRC Seminar I",
+  "category": "Workshop",
+  "allday": false,
+  "id": "976aed4d-ed86-4dde-9053-dd79b7273996",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=4"
+ },
+ {
   "site": "The Global Review",
   "title": "Internship Workshop",
   "start": "2026-11-19T18:30:00Z",
@@ -1162,6 +1174,18 @@
   "id": "131a6ca5-307b-407e-94a1-97458e6d7cfd",
   "description": "",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=24"
+ },
+ {
+  "site": "CTL Hub",
+  "title": "Info Session: Streamline your workflow with MS Tools",
+  "start": "2026-11-25T12:00:00Z",
+  "end": "2026-11-25T13:00:00Z",
+  "location": "IRC Seminar I",
+  "category": "Information session",
+  "allday": false,
+  "id": "6aa36164-2c6e-446a-bf19-459f81146784",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=5"
  },
  {
   "site": "TOS",
