@@ -1093,7 +1093,7 @@
  },
  {
   "site": "CTL Hub",
-  "title": "Workshop for Fall 2026 E-Exams, 12:45-13:45",
+  "title": "Workshop for Fall 2026 E-Exams",
   "start": "2026-11-18T11:45:00Z",
   "end": "2026-11-18T12:45:00Z",
   "location": "IRC Seminar I",
@@ -1294,6 +1294,18 @@
   "id": "2024d3d0-b189-431d-8d85-e0a4f33bf3f8",
   "description": "During the first session of the exam training, you'll receive information about the exam procedure and the regulations.\nAfterward, you'll take a mock written exam.",
   "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=37"
+ },
+ {
+  "site": "CTL Hub",
+  "title": "Info session: Kahoot! Basics",
+  "start": "2026-12-08T12:00:00Z",
+  "end": "2026-12-08T13:00:00Z",
+  "location": "Online",
+  "category": "",
+  "allday": false,
+  "id": "c21149d5-846a-4ad5-aebc-2d5759e6726c",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=6"
  },
  {
   "site": "telc at CU",
