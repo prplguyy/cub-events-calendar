@@ -984,6 +984,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ce6bd75c-de91-4675-b783-a54ba28c48c6/_layouts/15/Event.aspx?ListGuid=627c0305-07ee-4406-951e-794f3784246f&ItemId=6"
  },
  {
+  "site": "Chess Club",
+  "title": "Chess for Beginners",
+  "start": "2026-11-12T18:00:00Z",
+  "end": "2026-11-12T19:30:00Z",
+  "location": "IRC-Seminar Room 1",
+  "category": "Club events",
+  "allday": false,
+  "id": "a98f1737-3e47-4b63-9f4f-934a45a17dde",
+  "description": "Workshop on Chess basics for beginners.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/a741903f-279b-4c69-9473-54010bc6f211/_layouts/15/Event.aspx?ListGuid=d6cb6110-88bc-4208-8ea6-c7cea345ed71&ItemId=7"
+ },
+ {
   "site": "Environmental Club",
   "title": "Pre Protest Pizza Party",
   "start": "2026-11-12T18:00:00Z",
