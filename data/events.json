@@ -1188,6 +1188,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=5"
  },
  {
+  "site": "Student Clubs",
+  "title": "Pool Night",
+  "start": "2026-11-26T20:00:00Z",
+  "end": "2026-11-26T22:00:00Z",
+  "location": "Sportbad Grohn",
+  "category": "Sports Event",
+  "allday": false,
+  "id": "50e72eb9-31fc-4645-8501-41f2a05d4d19",
+  "description": "Join our Sports Advisor team for a fun-filled evening at Sportbad Grohn, just across the street from campus. Enjoy good music, great vibes, swimming, water polo, and exciting races in the pool while spending time with fellow students. Please note that this event is open to swimmers only. Register here and see you at the pool!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=133"
+ },
+ {
   "site": "TOS",
   "title": "Turkish Bar Night",
   "start": "2026-11-27T19:00:00Z",
