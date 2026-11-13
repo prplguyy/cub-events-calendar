@@ -120,6 +120,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/Pre-DegreeInformationHub/_layouts/15/Event.aspx?ListGuid=5a811770-7f9a-4112-94fb-d33084703e12&ItemId=14"
  },
  {
+  "site": "Chess Club",
+  "title": "Chess Playing Session",
+  "start": "2026-09-11T15:30:00Z",
+  "end": "2026-09-11T17:30:00Z",
+  "location": "IRC-Seminar Room 1",
+  "category": "Club events",
+  "allday": false,
+  "id": "9895511c-0c98-481c-8387-55268ae319d0",
+  "description": "♟️ *Constructor Chess Club Event — Today at 17:30*\nCome by today for an evening of *chess and CCC!*\nWe’ll have some time to play, along with a little information about the *Constructor Chess Club (CCC)* and what’s coming up this semester. There’ll also be a chance to ask questions or share ideas.\n🕠 *Time:* 17:30\n📍 *Location:* *IRC Seminar Room 1*\nWhether you’ve been playing chess for years or just want to drop by and see what CCC is about, *come join us!* ♟️",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/a741903f-279b-4c69-9473-54010bc6f211/_layouts/15/Event.aspx?ListGuid=d6cb6110-88bc-4208-8ea6-c7cea345ed71&ItemId=5"
+ },
+ {
   "site": "Student Clubs",
   "title": "TOS Opening Bar Night",
   "start": "2026-09-11T18:00:00Z",
@@ -154,6 +166,18 @@
   "id": "f44f88af-ec57-4fd4-9a4e-de557a6c230f",
   "description": "",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=118"
+ },
+ {
+  "site": "TOS",
+  "title": "Alumni Bar Night: Chillout at TOS",
+  "start": "2026-09-18T18:00:00Z",
+  "end": "2026-09-18T22:00:00Z",
+  "location": "TOS",
+  "category": "",
+  "allday": false,
+  "id": "e93c9e73-e4f9-43a5-b4c3-b6b5075c29d5",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=35"
  },
  {
   "site": "ASEAN CUB",
@@ -322,6 +346,18 @@
   "id": "5e64dd63-a6fd-4a9e-acb9-46e58caa4a33",
   "description": "Join us for our GDG on Campus Info Session to discover what we’re building this semester! From workshops to innovative projects and exciting events, explore a world of opportunities to get involved. See you there!\nRSVP HERE or Click the link in our bio!\nhttps://gdg.community.dev/e/mck7jr/\n📍 IRC Seminar Room III\n🕐 18:00-19:00\n🗓️ September 25, 2026",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/f4592732-b5ae-4537-9326-7c452871d04e/_layouts/15/Event.aspx?ListGuid=96b23d88-107e-4dcb-ae8f-f7db4c20ed19&ItemId=3"
+ },
+ {
+  "site": "RSA-DNA",
+  "title": "Heritage Day Celebration",
+  "start": "2026-09-25T16:00:00Z",
+  "end": "2026-09-25T21:00:00Z",
+  "location": "SAC Hall 3",
+  "category": "Club Events",
+  "allday": false,
+  "id": "71606bbe-23d4-470c-a05d-b5018aea8f31",
+  "description": "Heritage Day\nThe 24th of September is a deeply meaningful day for South Africans: a celebration of our heritage and the diversity within it, our cultures, traditions, languages and histories. We're marking Heritage Day (24 September) with a celebration on the 25th.\nThis event is open to RSA-DNA members and the wider Constructor University community; all students, staff and guests are welcome. So whether you're part of RSA-DNA or just curious about South African culture, come through.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b5d6960f-c754-4b30-8aa2-2e44922b74c0/_layouts/15/Event.aspx?ListGuid=55607d8c-625d-419a-87c9-009719366109&ItemId=2"
  },
  {
   "site": "TOS",
@@ -792,6 +828,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/23be7a5d-eb38-4f85-90e6-4105ff8e11b1/_layouts/15/Event.aspx?ListGuid=1ff054de-e5e8-45a4-aa49-456efc552bc8&ItemId=2"
  },
  {
+  "site": "Class 1A Entertainment Club",
+  "title": "Halloween Costume Competition",
+  "start": "2026-10-31T19:00:00Z",
+  "end": "2026-10-31T21:00:00Z",
+  "location": "SAC Hall 3",
+  "category": "Club Events",
+  "allday": false,
+  "id": "8d56df3f-8c51-4907-92c2-d594aad8e7b7",
+  "description": "Join us for Class 1A's Halloween Costume Competition 2026 to celebrate and enjoy some friendly, spooky competition! Bring your costumes and creativity, and come along for a night of scary competition, socialising, games, banter, and the chance to win some tasty prizes!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/5a7bcf4e-0085-46cf-bd0f-97829795c0b5/_layouts/15/Event.aspx?ListGuid=827d99b9-4d4b-4146-a38b-697793610152&ItemId=1"
+ },
+ {
   "site": "Student Clubs",
   "title": "Halloween Party",
   "start": "2026-10-31T21:00:00Z",
@@ -982,6 +1030,18 @@
   "id": "25cf79e3-1add-4d9b-956c-1b38e57912cd",
   "description": "It’s the Christian Fellowship’s biggest night of the year, and you don’t want to miss it! 🎉\nWe’re coming together to celebrate God’s goodness and give thanks for carrying us through another academic year: every exam, every deadline and every answered prayer. Expect powerful worship, prayer, an inspiring message from Pastor Albert, and testimonies that will lift your faith. Then the celebration continues with fun games and a special dinner with plenty of delicious food to share.\nBring your friends, bring your gratitude, and come ready for an unforgettable evening of fellowship and thanksgiving! 🙏✨",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/23be7a5d-eb38-4f85-90e6-4105ff8e11b1/_layouts/15/Event.aspx?ListGuid=1ff054de-e5e8-45a4-aa49-456efc552bc8&ItemId=3"
+ },
+ {
+  "site": "ASEAN CUB",
+  "title": "ASEAN CUB | K-POP Bar Night with SPECTRUM",
+  "start": "2026-11-13T19:00:00Z",
+  "end": "2026-11-13T22:00:00Z",
+  "location": "The Other Side (TOS)",
+  "category": "Club Events",
+  "allday": false,
+  "id": "bf8c5ee5-0d54-4fb8-99b3-1db26d79fa57",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=22"
  },
  {
   "site": "TOS",
@@ -1282,6 +1342,18 @@
   "id": "c21149d5-846a-4ad5-aebc-2d5759e6726c",
   "description": "",
   "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=6"
+ },
+ {
+  "site": "telc at CU",
+  "title": "telc B1 Exam Training II",
+  "start": "2026-12-22T00:00:00Z",
+  "end": "2026-12-22T23:59:00Z",
+  "location": "",
+  "category": "",
+  "allday": false,
+  "id": "7493140e-6282-47bb-ac08-eca05cba50c5",
+  "description": "In the second part of the exam preparation, we will review the written mock exam and work together to develop solution strategies. Afterward, we will simulate the oral exam.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=39"
  },
  {
   "site": "telc at CU",
