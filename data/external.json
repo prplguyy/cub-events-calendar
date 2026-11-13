@@ -1,4 +1,15 @@
 [
- {"id": "usg", "group": "usg", "name": "Undergraduate Student Government",
-  "url": "https://calendar.google.com/calendar/ical/undergrad.stud.gov%40gmail.com/public/basic.ics"}
+ {
+  "id": "usg",
+  "group": "usg",
+  "name": "Undergraduate Student Government",
+  "url": "https://calendar.google.com/calendar/ical/undergrad.stud.gov%40gmail.com/public/basic.ics",
+  "breaks": [
+   {
+    "from": "2026-12-05",
+    "to": "2027-01-31",
+    "why": "Exam season and winter holidays"
+   }
+  ]
+ }
 ]

@@ -192,10 +192,53 @@ def fetch_external():
                     else:
                         tzs.append(cur)
                     cur = None
+        events = apply_breaks(events, src.get("breaks"))
         ev, tz = out.setdefault(src["group"], ([], []))
         ev.extend(events)
         tz.extend(t for t in tzs if t not in tz)
         print(f'{src["id"]}: {len(events)} events from Google Calendar')
+    return out
+
+
+def apply_breaks(events, breaks):
+    """Skip every occurrence inside a break (e.g. exam season): weekly/daily series get EXDATEs,
+    single events and edited occurrences inside the break are dropped."""
+    if not breaks:
+        return events
+    spans = [(date.fromisoformat(b["from"]), date.fromisoformat(b["to"])) for b in breaks]
+    inside = lambda d: any(a <= d <= b for a, b in spans)
+    out = []
+    for ev in events:
+        get = lambda key: next((l for l in ev if l.split(":")[0].split(";")[0] == key), None)
+        start, rrule, rid = get("DTSTART"), get("RRULE"), get("RECURRENCE-ID")
+        if not start:
+            out.append(ev)
+            continue
+        params, value = start.split(":", 1)
+        day = date(int(value[:4]), int(value[4:6]), int(value[6:8]))
+        if rid:
+            r = rid.split(":", 1)[1]
+            if inside(date(int(r[:4]), int(r[4:6]), int(r[6:8]))):
+                continue
+        if not rrule:
+            if rid or not inside(day):
+                out.append(ev)
+            continue
+        rule = dict(kv.split("=", 1) for kv in rrule.split(":", 1)[1].split(";"))
+        step = {"WEEKLY": 7, "DAILY": 1}.get(rule.get("FREQ"))
+        if not step or "BYDAY" in rule and "," in rule["BYDAY"]:
+            out.append(ev)  # rule too complex to expand here; leave as is
+            continue
+        step *= int(rule.get("INTERVAL", 1))
+        tail = value[8:]  # time part, e.g. T200000 or T200000Z
+        exdates, d = [], day
+        for a, b in spans:
+            while d < a:
+                d += timedelta(days=step)
+            while d <= b:
+                exdates.append(f"{params.replace('DTSTART', 'EXDATE')}:{d:%Y%m%d}{tail}")
+                d += timedelta(days=step)
+        out.append(ev[:-1] + exdates + ev[-1:])
     return out
 
 
