@@ -13,6 +13,7 @@ import html
 import json
 import re
 import sys
+from datetime import date, timedelta
 from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "events.json"
@@ -52,7 +53,9 @@ def truthy(v):
 
 def main(payload_path):
     payload = json.loads(Path(payload_path).read_text(encoding="utf-8"))
-    since = payload["since"]
+    # The flow sends events from 2 days ago onward (GitHub caps a dispatch at ~64 KB).
+    # Never treat older stored events as deleted, whatever "since" the flow sends.
+    since = max(payload["since"], (date.today() - timedelta(days=2)).isoformat())
     rows = payload.get("rows") or []
     if isinstance(rows, str):
         rows = json.loads(rows)
