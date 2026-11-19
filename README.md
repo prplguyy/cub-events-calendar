@@ -55,11 +55,18 @@ Go to [make.powerautomate.com](https://make.powerautomate.com), then **Create â†
 
   The cells come back in the same order as `SelectProperties` above. If you change that list, change this too.
 
+**2b. Filter array** (Data Operation), between Select and the GitHub step
+- From (expression): `body('Select')`
+- Filter query (advanced mode): `@greaterOrEquals(string(item()?['r'][2]), formatDateTime(addDays(utcNow(), -2), 'yyyy-MM-dd'))`
+
+  SharePoint search ignores the date in the query and returns every event ever posted. GitHub rejects a dispatch
+  over 64 KB, so only events from 2 days ago onward are sent. Older events stay in `data/events.json` as history.
+
 **3. Create a repository dispatch event** (GitHub connector, signed in with an account that can push to this repo)
 - Repository Owner: `prplguyy`, Repository Name: `cub-events-calendar`
 - Event Name: `sharepoint-sync`
 - Event Payload (expression):
-  `addProperty(addProperty(json(decodeUriComponent('%7B%7D')), 'since', formatDateTime(addDays(utcNow(), -90), 'yyyy-MM-dd')), 'rows', body('Select'))`
+  `addProperty(addProperty(json(decodeUriComponent('%7B%7D')), 'since', formatDateTime(addDays(utcNow(), -90), 'yyyy-MM-dd')), 'rows', body('Filter_array'))`
 
   (`decodeUriComponent('%7B%7D')` is just `{}`; the expression editor refuses a literal `{}`.)
 
