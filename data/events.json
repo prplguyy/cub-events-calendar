@@ -1092,16 +1092,16 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/abdc11f2-3291-4365-96c8-ea49c5cabf44/_layouts/15/Event.aspx?ListGuid=a950ffb4-9218-44ba-9ff1-4aa5a56fb6bc&ItemId=5"
  },
  {
-  "site": "ASEAN CUB",
-  "title": "ASEAN CUB | Indonesian Potluck",
+  "site": "Echoes of Earth",
+  "title": "Documentary Night!🦕 Echoes of Earth x Krupp",
   "start": "2026-11-17T19:00:00Z",
-  "end": "2026-11-17T21:00:00Z",
-  "location": "Information Resource Centre (IRC) Small Seminar Room",
+  "end": "2026-11-17T20:00:00Z",
+  "location": "Campus Ring 1, 28759 Bremen, Germany",
   "category": "Club Events",
   "allday": false,
-  "id": "02a523e4-70ea-4d45-93b6-acf27de439d5",
-  "description": "",
-  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/8b57e800-4005-4846-9471-88f87238f90b/_layouts/15/Event.aspx?ListGuid=bf45d145-f502-47d0-a45e-db1d15bd7b71&ItemId=23"
+  "id": "888a5d77-5341-426f-8580-bcf3f1c86b34",
+  "description": "Join us this Tuesday, November 17th, to watch a brand new Netflix documentary “The Dinosaurs”! Bring a friend, relax, and enjoy what these animals could potentially look like in their habitat. Snacks and drinks are provided.\nThe event holds in Krupp Community Space (KCS) and will show the first 2 episodes of the documentary. Episodes 3 and 4 will be shown in IRC Seminar Room II on November 18!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b60effc1-bed2-4c9c-b1b3-a07eacae19f4/_layouts/15/Event.aspx?ListGuid=e441fb5c-227b-465d-ae2a-26b7d0bcdd65&ItemId=2"
  },
  {
   "site": "CTL Hub",
@@ -1116,6 +1116,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=4"
  },
  {
+  "site": "Echoes of Earth",
+  "title": "Documentary Night 2!🦖 Continuing with episodes 3 and 4🎞️",
+  "start": "2026-11-18T19:00:00Z",
+  "end": "2026-11-18T22:00:00Z",
+  "location": "Campus Ring 1, 28759 Bremen, Germany",
+  "category": "Club Events",
+  "allday": false,
+  "id": "4a47021a-5f9d-4f54-b2b7-b0bd5930d737",
+  "description": "Join us this Wednesday, November 18th, to continue binge-watching a brand new Netflix documentary “The Dinosaurs”! Bring a friend, relax, and enjoy what these animals could potentially look like in their habitat. Snacks and drinks are provided!\nThe event holds in IRC Seminar Room II and will show the last 2 episodes of the documentary. See you there!",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b60effc1-bed2-4c9c-b1b3-a07eacae19f4/_layouts/15/Event.aspx?ListGuid=e441fb5c-227b-465d-ae2a-26b7d0bcdd65&ItemId=3"
+ },
+ {
   "site": "The Global Review",
   "title": "Internship Workshop",
   "start": "2026-11-19T18:30:00Z",
@@ -1126,6 +1138,18 @@
   "id": "a9f094a0-b48b-494d-bb71-7e2f097b0e30",
   "description": "Wondering how to find an internship, what to expect, or where to even begin? Join The Global Review (TGR) for an informal and interactive Internship Experience-Sharing Session, bringing together students from different majors who have already completed their internships. Hear firsthand experiences from fellow students as they share where they interned, how they found their opportunities, what their roles involved, and the challenges and lessons they encountered along the way. From navigating applications and interviews to making the most of your internship, discover practical tips, tricks, and advice to help you prepare for your own journey.\nThe session will also feature an open Q&A, giving you the opportunity to ask questions, exchange ideas, and get honest insights directly from students who have been through the process. Whether you're a first-year student just starting to explore opportunities or a second-year student preparing for your mandatory internship, this session is for you!\n\nOpen to: Students from ALL MAJORS\nReal experiences, practical advice, and everything you wish you knew before your internship!",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/39f497b4-6553-4ce0-a829-333113a7b065/_layouts/15/Event.aspx?ListGuid=eb593b6a-d363-476c-8316-778479163748&ItemId=4"
+ },
+ {
+  "site": "AWS Student Builder Group",
+  "title": "Build Your AI Agent with AWS",
+  "start": "2026-11-20T16:00:00Z",
+  "end": "2026-11-20T18:00:00Z",
+  "location": "College Ring, 28759 Bremen, Germany",
+  "category": "Club Events",
+  "allday": false,
+  "id": "f4aa127d-5a20-474a-b0df-9c971182ec1a",
+  "description": "A hands on workshop for students to build their ai agent. Each person deploys their own voice AI assistant in their own AWS account. You open it in the browser, talk to it, and it answers with a voice. The main part is that everyone adds their own \"tool\" (like checking the weather, calendar, picking lunch or currency exchange…), and you can actually see the AI decide to use it.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/9448f814-519b-4bb3-a79b-87d28a1f1fb7/_layouts/15/Event.aspx?ListGuid=1ff30c5a-86a2-4ddb-83a6-5535f16e9259&ItemId=4"
  },
  {
   "site": "Student Clubs",
@@ -1150,6 +1174,18 @@
   "id": "d22b5d6c-dd91-455e-ad1f-50b95e45e900",
   "description": "",
   "url": "https://constructoruniversity.sharepoint.com/sites/TOS/_layouts/15/Event.aspx?ListGuid=aab3940f-c910-4246-9964-98e2fce43926&ItemId=47"
+ },
+ {
+  "site": "Class 1A Entertainment Club",
+  "title": "DND One Shot Night",
+  "start": "2026-11-21T18:00:00Z",
+  "end": "2026-11-21T22:30:00Z",
+  "location": "East Hall 5",
+  "category": "Community Event",
+  "allday": false,
+  "id": "a3f2dcf8-015f-44cd-a569-3419734dd493",
+  "description": "Through this event, we hope to introduce first-time players to the world of DND (Dungeons and Dragons) as well as give veteran players a fun gaming experience. We will run a series of one-shots (short adventures, ideally completed in a single night or session of play) created and played through by our Club members who will serve as Dungeon Masters (Game narrators and directors). Ideally, this will encourage new players to foray further into the world of Table Top Roleplaying Games (TTRPGS) and DND.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/5a7bcf4e-0085-46cf-bd0f-97829795c0b5/_layouts/15/Event.aspx?ListGuid=827d99b9-4d4b-4146-a38b-697793610152&ItemId=3"
  },
  {
   "site": "Explore Bremen",
@@ -1232,7 +1268,7 @@
   "category": "",
   "allday": false,
   "id": "e9e7d6b4-6922-4a17-a4b7-8ca53b2853e8",
-  "description": "The semester's last party, presented by RSA-DNA in partnership with TOS. Close out the semester with us. Everyone's welcome. Gqom, Amapiano, Techno, Afrobeats and Hip Hop.",
+  "description": "The semester's last party, presented by RSA-DNA in partnership with TOS. Close out the semester with us. Everyone's welcome. Gqom, Amapiano, Techno, Afrobeats, Hip Hop and EDM.\nEntry is €5, cash only. Presale at TOS on 20 November from 21:00, or pay at the door. Reserve your spot for free with the link above (Constructor login needed).\nSee the full poster",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b5d6960f-c754-4b30-8aa2-2e44922b74c0/_layouts/15/Event.aspx?ListGuid=55607d8c-625d-419a-87c9-009719366109&ItemId=4"
  },
  {
@@ -1310,8 +1346,8 @@
  {
   "site": "telc at CU",
   "title": "telc B1 Exam Training I",
-  "start": "2026-12-08T00:00:00Z",
-  "end": "2026-12-08T23:59:00Z",
+  "start": "2026-12-08T09:00:00Z",
+  "end": "2026-12-08T12:30:00Z",
   "location": "",
   "category": "",
   "allday": false,
@@ -1322,8 +1358,8 @@
  {
   "site": "telc at CU",
   "title": "telc B2 Exam Training I",
-  "start": "2026-12-08T00:00:00Z",
-  "end": "2026-12-08T23:59:00Z",
+  "start": "2026-12-08T09:00:00Z",
+  "end": "2026-12-08T12:30:00Z",
   "location": "",
   "category": "",
   "allday": false,
@@ -1346,8 +1382,8 @@
  {
   "site": "telc at CU",
   "title": "telc B1 Exam Training II",
-  "start": "2026-12-22T00:00:00Z",
-  "end": "2026-12-22T23:59:00Z",
+  "start": "2026-12-22T09:00:00Z",
+  "end": "2026-12-22T12:30:00Z",
   "location": "",
   "category": "",
   "allday": false,
@@ -1358,8 +1394,8 @@
  {
   "site": "telc at CU",
   "title": "telc B2 Exam Training II",
-  "start": "2026-12-22T00:00:00Z",
-  "end": "2026-12-22T23:59:00Z",
+  "start": "2026-12-22T09:00:00Z",
+  "end": "2026-12-22T12:30:00Z",
   "location": "",
   "category": "",
   "allday": false,
@@ -1390,6 +1426,18 @@
   "id": "33eaaa01-7226-4e23-821c-32d3566106a1",
   "description": "Mandatory trainings are scheduled for December 8 and December 22!",
   "url": "https://constructoruniversity.sharepoint.com/sites/GLP2/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=42"
+ },
+ {
+  "site": "Off-Campus Student Hub",
+  "title": "1000 Lights Concerts: Romantic Love Songs",
+  "start": "2027-01-31T16:30:00Z",
+  "end": "2027-01-31T18:30:00Z",
+  "location": "Unser Lieben Frauen Kirche, HB, Deutschland",
+  "category": "Concert",
+  "allday": false,
+  "id": "efca52c1-b309-410c-b838-b2c0f60b3e1f",
+  "description": "Experience magical moments at the Romantic Love Song concert with a unique atmosphere of light and music\nHighlights\n• Experience romantic love songs live on stage\n• Immerse yourself in a world full of feelings and emotions\n• Enjoy an evening of unforgettable melodies and lyrics\n\nWhy you should take advantage of the offer\nAre you looking for moments full of romance and magical sounds? The \"Romantic Love Songs\" take you into a world full of romance and emotions with gentle melodies. Accompanied by a pianist and two talented violinists, you will experience an unforgettable musical journey through the most beautiful love ballads.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/Off-CampusStudentHub/_layouts/15/Event.aspx?ListGuid=fc365478-c3c8-465d-a1d9-b301d52579a3&ItemId=62"
  },
  {
   "site": "Turkish Student Community",
