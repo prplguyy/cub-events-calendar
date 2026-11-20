@@ -1224,6 +1224,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/DEU/_layouts/15/Event.aspx?ListGuid=21f7d5ad-b7a1-4bad-80de-1c7c77ee7779&ItemId=5"
  },
  {
+  "site": "Google Developers Group",
+  "title": "Decode Me if You Can! : Capture the Flag",
+  "start": "2026-11-26T17:00:00Z",
+  "end": "2026-11-26T19:00:00Z",
+  "location": "Campus Ring 1, 28759 Bremen, Germany",
+  "category": "Club Events",
+  "allday": false,
+  "id": "f5e42bd6-0850-48d4-a26c-eb3069b60dac",
+  "description": "Decode Me If You Can 2 is the second edition of our cybersecurity workshop. The first edition introduced students to encoding, ciphers and hashing through a team decoding game. This edition picks up where it stopped. We open with a real-world attack, the evil twin Wi-Fi attack, and use it to show how attackers end up with password hashes. From there we give a beginner-friendly introduction to cybersecurity and to Capture The Flag (CTF) competitions, and we close with a real CTF: teams, a live scoreboard, ranks and prizes. The event is free and open to students of every major. No prior security knowledge is needed.\nA 60-minute jeopardy-style CTF, run like a real competition: teams register, solve challenges in any order, submit flags and climb a live scoreboard. Every challenge is designed for beginners and links back to something taught in the talk or in edition 1.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/f4592732-b5ae-4537-9326-7c452871d04e/_layouts/15/Event.aspx?ListGuid=96b23d88-107e-4dcb-ae8f-f7db4c20ed19&ItemId=4"
+ },
+ {
   "site": "Student Clubs",
   "title": "Pool Night",
   "start": "2026-11-26T20:00:00Z",
@@ -1250,13 +1262,13 @@
  {
   "site": "Turkish Student Community",
   "title": "TURKISH BARNIGHT",
-  "start": "2026-11-27T20:00:00Z",
-  "end": "2026-11-27T22:00:00Z",
+  "start": "2026-11-27T19:00:00Z",
+  "end": "2026-11-27T23:00:00Z",
   "location": "TOS",
   "category": "Club Events",
   "allday": false,
   "id": "85700675-7b24-4c47-8bd9-bd5754fde510",
-  "description": "Get ready for Turkish Bar Night!\nOur much-loved Turkish Bar Night is back! Expect a lively evening of Rakı, great company, and the best Turkish music. It has been a crowd favorite in the past, so don’t miss it!\nA quick note: TSC is promoting this event, while the organizing is done by another group of motivated, enthusiastic students. Have your own idea for a Turkish event? Get in touch with us! As a student group ourselves, we’d love to support you in bringing it to life.",
+  "description": "Get ready for Turkish Bar Night!\nThe much-loved Turkish Bar Night is back! Expect a lively evening of great company, and the best Turkish music. It has been a crowd favorite in the past, so don’t miss it!\nA quick note: TSC is promoting this event, while the organizing is done by another group of motivated, enthusiastic students. Have your own idea for a Turkish event? Get in touch with us! As a student group ourselves, we’d love to support you in bringing it to life.",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/c4190923-9310-4a1a-9dfc-554c215c4297/_layouts/15/Event.aspx?ListGuid=52c7bb6a-3642-46aa-aaa5-6a07006921f5&ItemId=6"
  },
  {
