@@ -1272,6 +1272,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/c4190923-9310-4a1a-9dfc-554c215c4297/_layouts/15/Event.aspx?ListGuid=52c7bb6a-3642-46aa-aaa5-6a07006921f5&ItemId=6"
  },
  {
+  "site": "SASA- South Asian Student Association",
+  "title": "Movie Night",
+  "start": "2026-11-28T18:00:00Z",
+  "end": "2026-11-28T22:00:00Z",
+  "location": "Merc Lounge",
+  "category": "Club events",
+  "allday": false,
+  "id": "74ae3f2a-af21-435b-8992-a0d3c57466e0",
+  "description": "",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ab13a434-9a6a-4388-9598-54edb15464ce/_layouts/15/Event.aspx?ListGuid=69eb698d-97ff-4eb2-97df-8a2d892b97e8&ItemId=8"
+ },
+ {
   "site": "RSA-DNA",
   "title": "Rumble Rendezvous",
   "start": "2026-11-28T21:00:00Z",
@@ -1318,18 +1330,6 @@
   "id": "52f790ec-d7f8-4212-8a5f-0daa00fba1b0",
   "description": "Watch party of the 2026 FIDE World Championship between Dommaraju Gukesh and Javokhir Sindarov.",
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/a741903f-279b-4c69-9473-54010bc6f211/_layouts/15/Event.aspx?ListGuid=d6cb6110-88bc-4208-8ea6-c7cea345ed71&ItemId=8"
- },
- {
-  "site": "SASA- South Asian Student Association",
-  "title": "Movie Night",
-  "start": "2026-11-29T18:00:00Z",
-  "end": "2026-11-29T19:00:00Z",
-  "location": "",
-  "category": "Club events",
-  "allday": false,
-  "id": "74ae3f2a-af21-435b-8992-a0d3c57466e0",
-  "description": "",
-  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/ab13a434-9a6a-4388-9598-54edb15464ce/_layouts/15/Event.aspx?ListGuid=69eb698d-97ff-4eb2-97df-8a2d892b97e8&ItemId=8"
  },
  {
   "site": "ASEAN CUB",
