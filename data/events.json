@@ -1248,6 +1248,18 @@
   "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/_layouts/15/Event.aspx?ListGuid=7f91bb2b-f630-4337-bd64-862ae155c028&ItemId=133"
  },
  {
+  "site": "Digital Creation Society",
+  "title": "3D Unity Basics Workshop",
+  "start": "2026-11-27T16:30:00Z",
+  "end": "2026-11-27T18:30:00Z",
+  "location": "Constructor University, VR Lab, South Hall",
+  "category": "Club Events",
+  "allday": false,
+  "id": "a581ea14-153d-48a8-8db2-77a5c70b4e76",
+  "description": "An introductory workshop designed for beginners who want to get started with Unity. Participants will learn how to install and navigate Unity, understand its main tools and functions, create basic character movement, and import 3D models and animations into a project.\nNo previous Unity experience is required.\nLaptop and, if possible, an external mouse.",
+  "url": "https://constructoruniversity.sharepoint.com/sites/StudentClubs/b45879df-4f1c-4833-b38b-a6b2aa5f034b/_layouts/15/Event.aspx?ListGuid=081e32b0-659a-4fdb-8179-eb912cf64fd3&ItemId=36"
+ },
+ {
   "site": "TOS",
   "title": "Turkish Bar Night",
   "start": "2026-11-27T19:00:00Z",
@@ -1336,7 +1348,7 @@
   "title": "World Chess Championship 2026 Watch Party",
   "start": "2026-11-29T14:30:00Z",
   "end": "2026-11-29T17:00:00Z",
-  "location": "IRC",
+  "location": "IRC-Seminar Room 1",
   "category": "Club events",
   "allday": false,
   "id": "52f790ec-d7f8-4212-8a5f-0daa00fba1b0",
